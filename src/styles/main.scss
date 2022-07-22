@@ -1,0 +1,14 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: azure;
+}
+
+h1 {
+  text-align: center;
+}
+
+@import './common/button.scss';
+
