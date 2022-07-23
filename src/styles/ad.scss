@@ -1,0 +1,101 @@
+.ad {
+    background: #F1EFEC;
+    border-radius: 8px;
+    padding: 24px 44px 24px 24px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 32%;
+    margin-left: 32px;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 890px) {
+    .ad {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 24px;
+    }
+}
+
+.ad::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    //background-image: url('../images/gear_perspective.png');
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    border-radius: 8px;
+    z-index: 1;
+}
+
+.ad-item:nth-child(1) {
+    flex: 60% 0 0;
+}
+
+.ad-item:nth-child(2) {
+    flex: 40% 0 0;
+}
+
+@media screen and (max-width: 890px) {
+    .ad {
+        justify-content: flex-start;
+    }
+    .ad-item:nth-child(1) {
+        flex: 106px 0 0;
+        margin-right: 65px;
+    }
+
+    .ad-item:nth-child(2) {
+        flex: 118px 0 0;
+    }
+}
+@media screen and (max-width: 698px) {
+    .ad-item:nth-child(1) {
+        flex: 106px 0 0;
+        margin-right: 30px;
+    }
+}
+@media screen and (max-width: 558px) {
+    .ad {
+        justify-content: space-between;
+        padding: 16px 16px 205px;
+    }
+    .ad-item:nth-child(1) {
+        flex: 46% 0 0;
+        margin-right: 0;
+    }
+
+    .ad-item:nth-child(2) {
+        flex: 48% 0 0;
+    }
+}
+
+.ad-item__inner {
+    display: flex;
+    flex-direction: column;
+    height: 213px;
+    width: 110px;
+    border-bottom: 4px solid #000;
+}
+
+.ad-item__title {
+    font-family: 'Graphik Compact LC', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 16px;
+}
+
+.ad-item__count {
+    font-family: 'Graphik Compact LC', sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 96px;
+    line-height: 80px;
+    margin-bottom: 8px;
+}
