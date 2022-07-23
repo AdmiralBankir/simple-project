@@ -31,7 +31,7 @@ const webpackConfig = {
         type: 'asset/resource',
         use: [
           {
-            loader: 'url-loader',
+            loader: 'file-loader',
             options: {
               name: '[name].[ext]',
               outputPath: 'fonts',

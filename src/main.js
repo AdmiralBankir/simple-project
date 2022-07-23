@@ -1,5 +1,6 @@
 import '@/sprite/index.js';
 import '@/styles/main.scss';
+import '@/styles/common/fonts.scss';
 import 'normalize.css';
 
 
