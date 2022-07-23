@@ -8,3 +8,4 @@ import '@/js/test-script.js';
 
 // images
 import '@/assets/whois.png';
+import '@/assets/header.png';
