@@ -1,0 +1,279 @@
+
+.header-wrapper {
+    height: 120px;
+    background: #ffbf33;
+}
+
+.top-line {
+    padding: 10px 0;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.top-line__inner {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+}
+
+header {
+    padding-top: 10px;
+    font-size: 14px;
+}
+
+.logo-link {
+    margin-top: 5px;
+}
+
+.logo {
+
+}
+
+.small-logo {
+    display: none;
+}
+
+.header-center {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 69%;
+}
+
+.e-link {
+    outline: none;
+    background: none;
+    border: none;
+    text-align: left;
+    padding: 0;
+    margin: 0;
+    color: black;
+    cursor: pointer;
+    text-decoration: none;
+    position: relative;
+    font-family: "Graphik LC Web", sans-serif;
+}
+
+.search {
+    display: flex;
+    width: 50%;
+    flex-grow: 2;
+}
+
+.phone {
+    display: flex;
+    flex-direction: column;
+    margin-left: 32px;
+}
+
+.phone-number {
+    font-size: 17px;
+    line-height: 24px;
+    font-weight: 700;
+}
+
+.basket {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 14px;
+}
+
+.basket img {
+    width: 21px;
+    height: 19px;
+    margin-bottom: 5px;
+}
+
+.top-block {
+    background: #ffbf33;
+    position: relative;
+    overflow: hidden;
+    padding: 64px 0 40px;
+}
+
+.top-block:before {
+    content:'';
+    background-image: url(../assets/header.png);
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    background-size: contain;
+    width: 50%;
+    max-height: 95%;
+    height: 95%;
+    position: absolute;
+    bottom: 0;
+    left: calc(50% + 80px);
+}
+
+.header-title {
+    font-family: 'Graphik Comp LC Web', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 96px;
+    line-height: 80px;
+    width: 57%;
+    margin: 0 0 40px;
+}
+
+.list {
+    display: flex;
+    justify-content: space-between;
+    width: 615px;
+}
+
+.list-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.list-item + .list-item {
+    margin-left: 40px;
+}
+
+.list-icon {
+    height: 26px;
+    width: auto;
+}
+
+.list-title {
+    font-weight: 700;
+    padding: 8px 0 4px;
+}
+
+.call {
+    display: flex;
+    flex-direction: row;
+    width: 450px;
+    margin-top: 40px;
+}
+
+.call input {
+    border-radius: 4px;
+    margin-right: 8px;
+}
+
+.call button {
+    border-radius: 4px;
+}
+
+
+@media screen and (max-width: 1472px) {}
+@media screen and (max-width: 1182px) {
+    .content-wrapper {
+        padding: 0 32px;
+    }
+    .header-title {
+        width: 66%;
+    }
+}
+@media screen and (max-width: 992px) {
+    .top-block {
+        padding-top: 54px;
+    }
+    .top-block:before {
+        height: 82%;
+        left: 50%;
+        bottom: -20px;
+    }
+    .header-title {
+        width: 100%;
+    }
+
+    input {
+        height: 40px;
+    }
+    .call {
+        width: 368px;
+    }
+    .call button {
+        width: 157px;
+    }
+}
+@media screen and (max-width: 890px) {
+    .header-center {
+        width: 80%;
+    }
+    .header-wrapper {
+        height: 56px;
+    }
+    .top-block {
+        padding-top: 46px;
+    }
+    .top-block:before {
+        height: 522px;
+        width: 522px;
+    }
+
+    .search button {
+        width: 52px;
+        padding: 3px 0 0;
+        flex-shrink: 0;
+    }
+    .list {
+        flex-direction: column;
+    }
+    .list-item {
+        margin-left: 60px;
+        position: relative;
+        font-size: 17px;
+    }
+    .list-item + .list-item {
+        margin-left: 60px;
+        margin-top: 20px;
+    }
+    .list-icon {
+        position: absolute;
+        top: 5px;
+        left: -51px;
+        width: 40px;
+        height: 26px;
+    }
+}
+
+@media screen and (max-width: 558px) {
+    .content-wrapper {
+        padding: 0 16px;
+    }
+    .top-block {
+        padding-bottom: 240px;
+        padding-top: 32px;
+    }
+    .top-block:before {
+        max-height: 330px;
+        max-width: 330px;
+        width: 80%;
+        height: 50%;
+        left: inherit;
+        right: -50px;
+    }
+    .header-title {
+        font-size: 40px;
+        line-height: 40px;
+    }
+    .header-center {
+        width: 60%;
+    }
+    .search {
+        display: none;
+    }
+    .phone {
+        margin-left: 0;
+    }
+    .call {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .call input {
+        margin-bottom: 8px;
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width: 320px) {
+
+}

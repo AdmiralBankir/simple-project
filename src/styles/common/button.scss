@@ -1,8 +1,21 @@
-.button {
-    margin: 5em auto;
-    background-color: chocolate;
-    display: block;
-    padding: 1em;
-    border-radius: 1em;
-    cursor: pointer;
+button {
+    background: #000;
+    color: #fff;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    font-family: "Graphik LC Web", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 24px;
+    height: 56px;
+    padding: 0 40px;
+}
+
+@media screen and (max-width: 992px) {
+    button {
+        height: 40px;
+        font-size: 14px;
+        line-height: 20px;
+    }
 }
