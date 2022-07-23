@@ -20,3 +20,4 @@ import '@/assets/item5.png';
 import '@/assets/item6.png';
 import '@/assets/item7.png';
 import '@/assets/gear_perspective.png';
+import '@/assets/semisphere.png';
