@@ -103,7 +103,9 @@
     font-size: 24px;
     line-height: 28px;
     display: inline-block;
-    width: 50%;
+    width: 62%;
+    position: relative;
+    z-index: 2;
 }
 
 .citem__title-small {
@@ -115,6 +117,7 @@
     position: absolute;
     bottom: 0;
     right: 0;
+    z-index: 1;
 }
 
 .catalog__item img {
