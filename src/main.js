@@ -25,3 +25,7 @@ import '@/assets/img1.png';
 import '@/assets/img2.png';
 import '@/assets/img3.png';
 import '@/assets/img4.png';
+import '@/assets/benefit1.png';
+import '@/assets/benefit2.png';
+import '@/assets/benefit3.png';
+
