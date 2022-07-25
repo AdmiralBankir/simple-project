@@ -1,6 +1,6 @@
 'use strict';
 
-const tab = function(section) {
+export default function(section) {
   const tabNav = document.querySelectorAll(section+' .tabs__link>a');
   const tabContent = document.querySelectorAll(section+' .tabs__item');
   const pointer = document.querySelector(section+' .tabs__pointer');
@@ -33,13 +33,4 @@ const tab = function(section) {
       item.classList.contains(tabName) ? item.classList.add('is-active') : item.classList.remove('is-active');
     });
   }
-};
-
-window.onload = function() {
-  if (document.querySelectorAll('.car-brand__tabs').length) {
-    tab('.car-brand__tabs');
-  }
-  if (document.querySelectorAll('.our-work__tabs').length) {
-    tab('.our-work__tabs');
-  }
-};
+}

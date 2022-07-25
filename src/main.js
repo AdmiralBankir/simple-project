@@ -1,12 +1,12 @@
 import '@/sprite/index.js';
+import 'normalize.css';
 import '@/styles/main.scss';
 import '@/styles/common/fonts.scss';
-import 'normalize.css';
 
 
 // js
 import '@/js/test-script.js';
-import '@/js/tabs.js';
+import '@/js/scripts.js';
 
 // images
 import '@/assets/whois.png';
