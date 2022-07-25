@@ -49,6 +49,11 @@
     justify-content: space-between;
 }
 
+@media screen and (max-width: 890px) {
+    .select-all__inner {
+        flex-direction: column;
+    }
+}
 .catalog {
     width: 66%;
     max-width: 864px;
