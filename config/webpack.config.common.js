@@ -28,16 +28,6 @@ const webpackConfig = {
       },
       {
         test: /\.(ttf|eot|woff|woff2)$/,
-        type: 'asset/resource',
-        use: [
-          {
-            loader: 'file-loader',
-            options: {
-              name: '[name].[ext]',
-              outputPath: 'fonts',
-            },
-          },
-        ],
       },
       {
         test: /\.(css|scss|sass)$/,
