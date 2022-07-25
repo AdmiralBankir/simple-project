@@ -1,0 +1,236 @@
+.our-work {
+    margin-bottom: 72px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 992px) {
+    .our-work {
+        max-width: 736px;
+        margin: 0 auto;
+    }
+}
+
+.our-work__title {
+    flex-basis: 32%;
+}
+
+.our-work__title>h2 {
+    width: 70%;
+}
+
+@media screen and (max-width: 992px) {
+    .our-work__title {
+        flex-basis: 100%;
+    }
+    .our-work__title>h2 {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .our-work__title {
+        flex-basis: 100%;
+    }
+}
+
+.our-work__content {
+    flex-basis: 67%;
+}
+@media screen and (max-width: 992px) {
+    .our-work__content {
+        flex-basis: 100%;
+        max-width: 100%;
+    }
+}
+
+.our-work__list {
+    padding-top: 38px;
+}
+
+.our-work__item {
+    margin-bottom: 48px;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.our-work__item:first-child .our-work__text {
+    margin-top: 40px;
+}
+.our-work__item:last-child .our-work__text {
+    margin-top: 32px;
+}
+
+@media screen and (max-width: 700px) {
+    .our-work__item  .our-work__text,
+    .our-work__item:first-child .our-work__text,
+    .our-work__item:last-child .our-work__text {
+        margin-top: 20px;
+    }
+}
+
+.our-work__img {
+    margin-right: 32px;
+    width: 440px;
+    height: 200px;
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: cover;
+    flex: 440px 1 0;
+}
+
+@media screen and (max-width: 890px) {
+    .our-work__img {
+        margin-right: 24px;
+    }
+}
+
+.tab1 .our-work__item:first-child .our-work__img {
+    height: 242px;
+}
+
+.tab1 .our-work__item:last-child .our-work__img {
+    height: 240px;
+}
+
+@media screen and (max-width: 700px) {
+    .our-work__img {
+        flex: calc(100vw - 16px) 1 0;
+        margin-right: 0;
+        width: calc(100vw - 16px);
+    }
+}
+
+.our-work__item-info .our-work__img {
+    margin-top: 32px;
+}
+
+.our-work__text {
+    font-family: 'Graphik LC', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 24px;
+    flex-basis: calc(100% - 440px - 32px);
+}
+@media screen and (max-width: 890px) {
+    .our-work__text {
+        flex-basis: calc(100% - 440px - 24px);
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .our-work__text {
+        flex-basis: 100%;
+    }
+}
+
+.our-work__info {
+    background: #FFFFFF;
+    box-shadow: 0 4px 30px rgba(108, 72, 0, 0.2);
+    border-radius: 4px;
+    padding: 18px 24px;
+    top: 0;
+    left: 128px;
+    width: 272px;
+    max-width: 272px;
+    box-sizing: border-box;
+    position: absolute;
+}
+
+@media screen and (max-width: 558px) {
+    .our-work__info {
+        left: 25%;
+        width: 70%;
+        min-width: 216px;
+        padding: 14px 20px;
+    }
+}
+
+.our-work__info > ul {
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.our-work__info > ul:before {
+    content: "";
+    position: absolute;
+    left: 7px;
+    top: 8px;
+    background: #F9B122;
+    height: calc(100% - 16px);
+    width: 2px;
+}
+
+@media screen and (max-width: 558px) {
+    .our-work__info > ul:before {
+        left: 5px;
+    }
+}
+
+.our-work__info > ul > li {
+    list-style: none;
+    display: flex;
+    align-items: flex-end;
+}
+
+.our-work__info > ul > li:before {
+    content: "";
+    background: #F9B122;
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    margin-right: 16px;
+    margin-bottom: 2px;
+}
+
+@media screen and (max-width: 558px) {
+    .our-work__info > ul > li:before {
+        width: 12px;
+        height: 12px;
+        margin-right: 12px;
+    }
+}
+
+.owi__date {
+    font-family: 'Graphik LC', sans-serif;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 20px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+@media screen and (max-width: 558px) {
+    .owi__date {
+        font-size: 8.74107px;
+        line-height: 16px;
+    }
+}
+
+.owi__text {
+    font-family: 'Graphik LC', sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 24px;
+    display: inline-block;
+    margin-left: 16px;
+}
+
+.owi__text.bold {
+    font-weight: 700;
+}
+
+@media screen and (max-width: 558px) {
+    .owi__text {
+        font-size: 13.5px;
+        line-height: 19px;
+        margin-left: 12px;
+    }
+}
