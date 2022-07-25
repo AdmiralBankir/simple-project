@@ -13,6 +13,10 @@
     position: relative;
     overflow-x: auto;
     scrollbar-width: thin;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
 }
 
 .tabs__links > ul > li {

@@ -17,6 +17,10 @@
 .car-brand__item {
     list-style: none;
     margin-bottom: 24px;
+
+    @media screen and (max-width: 992px) {
+        margin-bottom: 16px;
+    }
 }
 
 .car-brand__link {
@@ -45,7 +49,7 @@
     height: 0;
     border-bottom: 8px solid #F9B122;
     position: absolute;
-    bottom: -5px;
+    bottom: -1px;
     left: 0;
     z-index: 0;
 }
