@@ -35,6 +35,9 @@
 .tabs__item {
     display: none;
     position: relative;
+    &.is-active {
+        display: block;
+    }
 }
 
 .tabs__pointer {

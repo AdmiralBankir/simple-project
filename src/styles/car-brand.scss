@@ -1,0 +1,63 @@
+.car-brand {
+    margin-bottom: 60px;
+}
+
+.car-brand__list {
+    margin: 32px 0 0;
+    padding: 0;
+    column-count: 6;
+}
+
+@media screen and (max-width: 992px) {
+    .car-brand__list {
+        column-count: inherit;
+        column-width: 130px;
+    }
+}
+
+.car-brand__item {
+    list-style: none;
+    margin-bottom: 24px;
+}
+
+.car-brand__link {
+    font-family: 'Graphik LC', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 24px;
+    color: black;
+    text-decoration: none;
+}
+
+.car-brand__all {
+    text-decoration: none;
+    color: #000;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding-left: 18px;
+}
+
+.car-brand__all:before {
+    content: "";
+    display: block;
+    width: 109px;
+    height: 0;
+    border-bottom: 8px solid #F9B122;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    z-index: 0;
+}
+
+.car-brand__all span {
+    display: inline-block;
+    font-family: 'Graphik Compact LC', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    margin-right: 5px;
+    position: relative;
+    z-index: 1;
+}

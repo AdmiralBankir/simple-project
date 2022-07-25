@@ -6,6 +6,7 @@ import 'normalize.css';
 
 // js
 import '@/js/test-script.js';
+import '@/js/scripts.js';
 
 // images
 import '@/assets/whois.png';
