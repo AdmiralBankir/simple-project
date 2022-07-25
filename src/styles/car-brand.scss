@@ -6,12 +6,11 @@
     margin: 32px 0 0;
     padding: 0;
     column-count: 6;
-}
 
-@media screen and (max-width: 992px) {
-    .car-brand__list {
+    @media screen and (max-width: 992px) {
         column-count: inherit;
         column-width: 130px;
+        margin: 24px 0 0;
     }
 }
 
@@ -61,3 +60,46 @@
     position: relative;
     z-index: 1;
 }
+
+.moto {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 32px;
+    justify-content: space-between;
+
+    @media screen and (max-width: 992px) {
+        margin-top: 24px;
+    }
+
+    &__block {
+        flex: 31% 0 0;
+
+        @media screen and (max-width: 736px) {
+            flex: 49% 0 0;
+        }
+
+        @media screen and (max-width: 558px) {
+            flex: 100% 0 0;
+        }
+    }
+
+    &__title {
+        font-size: 17px;
+        font-weight: 700;
+        line-height: 24px;
+        margin-bottom: 16px;
+    }
+
+    &__list {
+        margin: 0;
+        padding: 0;
+        column-count: 2;
+    }
+
+    &__item {
+        list-style: none;
+        padding-bottom: 16px;
+    }
+}
+
