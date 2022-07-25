@@ -28,4 +28,11 @@ import '@/assets/img4.png';
 import '@/assets/benefit1.png';
 import '@/assets/benefit2.png';
 import '@/assets/benefit3.png';
-
+import '@/assets/our-work1.png';
+import '@/assets/our-work2.png';
+import '@/assets/our-work3.png';
+import '@/assets/our-work4.png';
+import '@/assets/our-work5.png';
+import '@/assets/our-work1-1.png';
+import '@/assets/whatsapp.png';
+import '@/assets/spares.png';
