@@ -180,16 +180,12 @@ header {
     }
     .header-title {
         width: 100%;
+        font-size: 70px;
+        line-height: 65px;
     }
 
-    input {
-        height: 40px;
-    }
     .call {
         width: 368px;
-    }
-    .call button {
-        width: 157px;
     }
 }
 @media screen and (max-width: 890px) {

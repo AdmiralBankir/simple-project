@@ -63,7 +63,7 @@ body {
     display: none;
   }
   .is-mobile {
-    display: block;
+    display: block !important;
   }
 }
 
