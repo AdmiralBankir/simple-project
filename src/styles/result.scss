@@ -1,0 +1,142 @@
+.results {
+    margin-bottom: 80px;
+}
+
+.results__label {
+    font-family: 'Graphik LC', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 20px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+
+@media screen and (max-width: 558px) {
+    .results__label {
+        font-size: 11px;
+        line-height: 20px;
+    }
+}
+
+.results__blocks {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+@media screen and (max-width: 992px) {
+    .results__blocks {
+        justify-content: space-between;
+    }
+}
+
+@media screen and (max-width: 736px) {
+    .results__blocks {
+        flex-wrap: wrap;
+    }
+}
+
+.result__block {
+    flex: 23% 0 0;
+    margin-right: 32px;
+    padding: 16px;
+    border-radius: 4px;
+    height: 296px;
+    position: relative;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.block_grey {
+    background: #F1EFEC;
+}
+
+.block_yellow {
+    background: #FFBF33;
+    flex: 32% 0 0;
+}
+
+@media screen and (max-width: 992px) {
+    .result__block {
+        flex: 31% 0 0;
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width: 736px) {
+    .result__block {
+        flex: 48% 0 0;
+        margin-bottom: 24px;
+    }
+    .block_yellow {
+        flex: 100% 0 0;
+    }
+}
+
+@media screen and (max-width: 558px) {
+    .result__block {
+        flex: 100% 0 0;
+    }
+}
+
+.block_whatsapp:after {
+    content: "";
+    position: absolute;
+    right: 16px;
+    bottom: 16px;
+    //background-image: url("../images/whatsapp.png");
+    background-position: 0 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 96px;
+    height: 96px;
+}
+
+.result__title {
+    font-family: 'Graphik LC', sans-serif;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 24px;
+}
+
+.result__phone {
+    position: relative;
+    display: inline-block;
+    line-height: 17px;
+}
+
+.result__phone>span {
+    display: inline-block;
+    position: relative;
+    z-index: 2;
+}
+
+.result__phone:before {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-bottom: 4px solid #FFFFFF;
+    width: 100%;
+    height: 0;
+    z-index: 1;
+}
+
+.results__form {
+    display: flex;
+    flex-direction: column;
+}
+
+.results__input {
+    margin-bottom: 8px;
+}
+
+.results__input,
+.results__button {
+    border-radius: 4px;
+}
