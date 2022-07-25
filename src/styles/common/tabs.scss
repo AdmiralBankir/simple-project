@@ -1,0 +1,49 @@
+
+.tabs__links {
+    border-bottom: 4px solid #000000;
+    position: relative;
+}
+
+.tabs__links > ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 0;
+    padding: 5px 0 16px;
+    position: relative;
+    overflow-x: auto;
+    scrollbar-width: thin;
+}
+
+.tabs__links > ul > li {
+    list-style: none;
+    margin: 0 30px 0 0;
+    padding: 0;
+}
+
+.tabs__links > ul > li > a {
+    font-family: 'Graphik LC', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 24px;
+    color: #000;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.tabs__item {
+    display: none;
+    position: relative;
+}
+
+.tabs__pointer {
+    width: 100px;
+    height: 0;
+    border-bottom: 8px solid #FFBF33;
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    transition: width 0.4s, left 0.4s;
+    animation-timing-function: ease-in-out;
+}

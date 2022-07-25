@@ -1,12 +1,35 @@
 input {
     outline: 0;
     border: none;
-    border-radius: 4px 0 0 4px;
+    border-radius: 4px;
     padding: 0 0 0 16px;
     flex-grow: 2;
+    height: 56px;
+    font-family: 'Graphik LC', sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 24px;
+}
+
+@media screen and (max-width: 992px) {
+    input {
+        font-size: 14px;
+        line-height: 20px;
+    }
 }
 
 input::placeholder {
-    font-family: "Graphik LC Web", sans-serif;
+    font-family: "Graphik LC", sans-serif;
     color: #A0A0A0;
+}
+
+label {
+    font-family: 'Graphik LC', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 20px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 4px;
 }

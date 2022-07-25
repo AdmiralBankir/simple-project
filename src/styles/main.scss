@@ -3,7 +3,7 @@ html {
 }
 
 body {
-  font-family: "Graphik LC Web", sans-serif;
+  font-family: "Graphik LC", sans-serif;
   margin: 0;
 }
 
@@ -19,7 +19,7 @@ body {
 }
 
 .h2 {
-  font-family: "Graphik Comp LC Web", sans-serif;
+  font-family: "Graphik Comp LC", sans-serif;
   font-weight: bold;
   font-size: 46px;
   line-height: 104%;
@@ -27,13 +27,32 @@ body {
 }
 
 .h3 {
-  font-family: "Graphik Comp LC Web", sans-serif;
+  font-family: "Graphik Comp LC", sans-serif;
   font-weight: bold;
   font-size: 24px;
   line-height: 28px;
   margin: 0 0 1em;
   position: relative;
 }
+
+@media screen and (max-width: 558px) {
+  .h2 {
+    font-size: 24px;
+    margin: 0 0 24px;
+  }
+  .h3 {
+    font-size: 17px;
+  }
+}
+
+.is-active {
+  display: block;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
 
 .is-mobile {
   display: none;
@@ -57,19 +76,9 @@ body {
 }
 
 .main-content {
-  padding-top: 72px;
-}
-
-@media screen and (max-width: 992px) {
-  .main-content {
-    padding-top: 88px;
-  }
-}
-
-@media screen and (max-width: 558px) {
-  .main-content {
-    padding-top: 48px;
-  }
+  padding-top: 40px;
+  position: relative;
+  overflow-x: hidden;
 }
 
 .wrapper {
@@ -80,8 +89,10 @@ body {
   height: 100%;
 }
 
+
 @import './common/button.scss';
 @import './common/input.scss';
+@import './common/tabs.scss';
 //@import './common/fonts.scss';
 @import './header.scss';
 @import './footer.scss';
