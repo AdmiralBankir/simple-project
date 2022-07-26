@@ -3,6 +3,9 @@
 import stickyHeader from '@/js/sticky-header';
 import tab from '@/js/tabs.js';
 import popup from '@/js/popup.js';
+import createVideo from './video';
+
+const videoId = 'hDXI8A0-UCA';
 
 window.onload = function() {
   if (document.querySelectorAll('.car-brand__tabs').length) {
@@ -26,5 +29,7 @@ window.onload = function() {
   // };
 
   popup();
+
+  createVideo(videoId);
 };
 
