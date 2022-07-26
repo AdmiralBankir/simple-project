@@ -6,3 +6,4 @@ import './search.svg';
 import './icon.svg';
 import './icon1.svg';
 import './icon2.svg';
+import './close.svg';

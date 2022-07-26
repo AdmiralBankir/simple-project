@@ -164,17 +164,15 @@ header {
     flex-direction: row;
     width: 450px;
     margin-top: 40px;
-}
 
-.call input {
-    border-radius: 4px;
-    margin-right: 8px;
-}
+    &__form {
+        width: 100%;
+    }
 
-.call button {
-    border-radius: 4px;
+    > input {
+        margin-right: 8px;
+    }
 }
-
 
 @media screen and (max-width: 1472px) {}
 @media screen and (max-width: 1182px) {
@@ -282,9 +280,13 @@ header {
     .call input {
         margin-bottom: 8px;
         margin-right: 0;
+        width: 100%;
+        box-sizing: border-box;
     }
 }
 
-@media screen and (max-width: 320px) {
-
+@media screen and (max-width: 380px) {
+    .call button {
+        width: 100%;
+    }
 }
