@@ -13,11 +13,13 @@ window.onload = function() {
   }
 
   const sticky = document.querySelector('header').offsetTop;
-  stickyHeader(sticky);
-
-  window.onscroll = function() {
+  if (sticky) {
     stickyHeader(sticky);
-  };
+
+    window.onscroll = function() {
+      stickyHeader(sticky);
+    };
+  }
 
   // window.resize = function() {
   //   sticky = document.querySelector('header').offsetTop;
