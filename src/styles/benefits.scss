@@ -70,15 +70,15 @@
 }
 
 .benefit__item:nth-child(1):before {
-    //background-image: url('../images/benefit1.png');
+    background-image: url('../assets/benefit1.png');
 }
 
 .benefit__item:nth-child(2):before {
-    //background-image: url('../images/benefit2.png');
+    background-image: url('../assets/benefit2.png');
 }
 
 .benefit__item:nth-child(3) {
-    //background: linear-gradient(0deg, rgba(0, 0, 0, 0.22), rgba(0, 0, 0, 0.22)), url('../images/benefit3.png');
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.22), rgba(0, 0, 0, 0.22)), url('../assets/benefit3.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center right
