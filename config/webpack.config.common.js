@@ -64,7 +64,8 @@ const webpackConfig = {
       filename: isDev ? 'css/[hash].css' : 'css/[name].[contenthash:8].css',
       chunkFilename: '[id].css',
     }),
-    new HtmlPlugin({ template: 'index.html', chunksSortMode: 'auto' }),
+    new HtmlPlugin({ template: 'index.html', filename: 'index.html', chunksSortMode: 'auto' }),
+    new HtmlPlugin({ template: 'result.html', filename: 'result.html', chunksSortMode: 'auto' }),
     new ESLintPlugin(),
     new CopyPlugin({
       patterns: [
