@@ -30,19 +30,15 @@
 
                 <div class="header-center">
                     <div class="search">
-                        <input type="text" placeholder="Номер детали, VIN. Пример — 1744977"/>
-                        <button class="is-desktop">Найти</button>
-                        <button class="is-mobile">
-                            <svg width="24" height="24">
-                                <use xlink:href="#search"></use>
-                            </svg>
-                        </button>
-                    </div>
-
-                    <div class="phone">
-                        <span class="phone-number">+7 (843) 227-08-96</span>
-                        <span class="is-desktop">Бесплатный подбор за 10 минут</span>
-                        <span class="is-mobile">Подбор за 10 минут</span>
+                        <form action="" class="search-form">
+                            <input type="text" placeholder="Номер детали, VIN. Пример — 1744977"/>
+                            <button class="is-desktop search-submit">Найти</button>
+                            <button class="is-mobile search-submit">
+                                <svg width="24" height="24">
+                                    <use xlink:href="#search"></use>
+                                </svg>
+                            </button>
+                        </form>
                     </div>
                 </div>
 
@@ -114,7 +110,7 @@
             <div class="results">
                 <div class="results__label">Результаты поиска</div>
                 <h2 class="h2">
-                    Купить «Фара на Форд» поможет эксперт
+                    Купить «<span class="results-text">Фара на Форд</span>» поможет эксперт
                 </h2>
                 <h3 class="h3">
                     Как подобрать подходящую запчасть по лучшей цене

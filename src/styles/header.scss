@@ -65,17 +65,22 @@ header {
 }
 
 .search {
-    display: flex;
     width: 50%;
     flex-grow: 2;
 }
 
-.search > input {
-    border-radius: 4px 0 0 4px;
+.search-form {
+    display: flex;
+
+    .search > input {
+        border-radius: 4px 0 0 4px;
+    }
+    .search > button {
+        border-radius: 0 4px 4px 0;
+    }
 }
-.search > button {
-    border-radius: 0 4px 4px 0;
-}
+
+
 
 .phone {
     display: flex;

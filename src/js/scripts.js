@@ -24,6 +24,39 @@ window.onload = function() {
     };
   }
 
+  // отображаем текст поиска на result.html
+  const result = document.querySelector('.results-text');
+  if (result) {
+    const text = document.location.search;
+    if (text.length>1) {
+      const i = text.indexOf('=') + 1;
+      result.textContent = text.substring(i);
+    }
+  }
+
+  const searchForm = document.querySelector('.search-form');
+
+  if (searchForm) {
+    const regexNumber = /^\d+/;
+    //const regexVIN = new RegExp('^[A-HJ-NPR-Z\\d]{8}[\\dX][A-HJ-NPR-Z\\d]{2}[A-Z0-9-]\\d{5}$');
+    const regexVIN = new RegExp('^[A-HJ-NPR-Z\\d]{8}[\\dA-Z][A-HJ-NPR-Z\\d]{2}[A-Z0-9-]\\d{5}$');
+
+    searchForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const input = document.querySelector('.search-form>input');
+
+      if (regexNumber.test(input.value)) {
+        location.href = 'https://emex.ru/products/'+input.value;
+      }
+      else if (regexVIN.test(input.value)) { // vin for test: Z6FAXXESMAJT02521, WAUBH54B11N111054, WDF44781313229645
+        location.href = 'https://emex.ru/catalogs/original2/modifications?vin='+input.value;
+      }
+      else {
+        location.href = '/result.html?search='+input.value;
+      }
+    });
+  }
+
   // window.resize = function() {
   //   sticky = document.querySelector('header').offsetTop;
   // };
