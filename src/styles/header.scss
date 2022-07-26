@@ -181,7 +181,8 @@ header {
     }
 
     &__success {
-        display: flex;
+        //display: flex;
+        display: none;
         align-items: flex-start;
 
         @media screen and (max-width: 558px){

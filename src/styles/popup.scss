@@ -43,21 +43,33 @@
     max-width: 736px;
     box-sizing: border-box;
     z-index: 10;
+    overflow: hidden;
 
     > h2 {
         margin-bottom: 0;
     }
 
-    &:after {
+    &:before {
         content: "";
         display: block;
         background-image: url("../assets/header.png");
-        background-position: bottom right;
+        background-position: 100% 100%;
         background-size: contain;
         background-repeat: no-repeat;
         position: absolute;
-        bottom: 0;
-        right: 0;
+        bottom: -30px;
+        right: -52px;
+        width: 283px;
+        height: 283px;
+        z-index: -1;
+
+        @media screen and (max-width: 736px) {
+            right: -102px;
+        }
+
+        @media screen and (max-width: 558px) {
+            right: -72px;
+        }
     }
 }
 
