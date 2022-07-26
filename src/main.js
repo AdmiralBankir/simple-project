@@ -5,35 +5,4 @@ import '@/styles/common/fonts.scss';
 
 
 // js
-import '@/js/test-script.js';
 import '@/js/scripts.js';
-
-// images
-import '@/assets/whois.png';
-import '@/assets/header.png';
-import '@/assets/toroid.png';
-import '@/assets/toroid2.png';
-import '@/assets/item1.png';
-import '@/assets/item2.png';
-import '@/assets/item3.png';
-import '@/assets/item4.png';
-import '@/assets/item5.png';
-import '@/assets/item6.png';
-import '@/assets/item7.png';
-import '@/assets/gear_perspective.png';
-import '@/assets/semisphere.png';
-import '@/assets/img1.png';
-import '@/assets/img2.png';
-import '@/assets/img3.png';
-import '@/assets/img4.png';
-import '@/assets/benefit1.png';
-import '@/assets/benefit2.png';
-import '@/assets/benefit3.png';
-import '@/assets/our-work1.png';
-import '@/assets/our-work2.png';
-import '@/assets/our-work3.png';
-import '@/assets/our-work4.png';
-import '@/assets/our-work5.png';
-import '@/assets/our-work1-1.png';
-import '@/assets/whatsapp.png';
-import '@/assets/spares.png';
