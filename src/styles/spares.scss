@@ -1,17 +1,38 @@
 .spares {
     background: #F1EFEC;
-    //background: #F1EFEC url("../images/spares.png") top right no-repeat;
-    background-size: contain;
     border-radius: 8px;
     padding: 32px 24px 24px;
     margin-bottom: 60px;
     min-height: 412px;
     box-sizing: border-box;
-}
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
 
-@media screen and (max-width: 736px) {
-    .spares {
+    @media screen and (max-width: 736px) {
         padding: 24px 16px 16px;
+    }
+
+    &:before {
+        content: "";
+        display: block;
+        position: absolute;
+        bottom: -60px;
+        right: -160px;
+        width: 624px;
+        height: 612px;
+        background: url("../assets/spares.png") top right no-repeat;
+        background-size: contain;
+        z-index: -1;
+
+        @media screen and (max-width: 736px) {
+            bottom: -127px;
+        }
+
+        @media screen and (max-width: 558px) {
+            right: inherit;
+            left: 25px;
+        }
     }
 }
 
@@ -128,8 +149,14 @@
 .spares_dark {
     color:#fff;
     background-color: #000;
+
+    a {
+        color: #fff;
+    }
+
+    .call__success {
+        background: transparent;
+        padding: 0;
+    }
 }
 
-.spares_dark a {
-    color: #fff;
-}
