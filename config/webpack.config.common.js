@@ -22,12 +22,17 @@ const webpackConfig = {
   module: {
     rules: [
       {
+        test: /\.html$/i,
+        loader: 'html-loader',
+      },
+      {
         test: /\.js$/,
         loader: 'babel-loader',
         include: [helpers.root('src')],
       },
       {
         test: /\.(ttf|eot|woff|woff2)$/,
+        type: 'asset/resource',
       },
       {
         test: /\.(css|scss|sass)$/,
@@ -49,18 +54,8 @@ const webpackConfig = {
       },
       {
         test: /\.(jpg|png|gif|svg)$/,
+        type: 'asset/resource',
         exclude: [helpers.root('src/sprite')],
-        use: [
-          {
-            loader: 'file-loader',
-            options: {
-              esModule: false,
-              name: '[name].[ext]',
-              outputPath: 'img',
-              publicPath: 'img',
-            },
-          },
-        ],
       },
     ],
   },
