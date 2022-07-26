@@ -10,3 +10,4 @@ import './close.svg';
 import './successWhite.svg';
 import './successYellow.svg';
 import './successLight.svg';
+import './play-icon.svg';
