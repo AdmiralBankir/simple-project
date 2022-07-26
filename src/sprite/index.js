@@ -7,3 +7,6 @@ import './icon.svg';
 import './icon1.svg';
 import './icon2.svg';
 import './close.svg';
+import './successWhite.svg';
+import './successYellow.svg';
+import './successLight.svg';

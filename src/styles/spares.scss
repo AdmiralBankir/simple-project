@@ -52,6 +52,7 @@
 .spares-form {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     align-items: flex-end;
 }
 
@@ -62,24 +63,36 @@
     }
 }
 
+.spares-form__text {
+    width: 100%;
+}
+
 .spares-form__item {
     margin-right: 8px;
     display: flex;
     flex-direction: column;
-}
 
-@media screen and (max-width: 890px) {
-    .spares-form__item {
+    > input {
+        max-width: 203px;
+    }
+
+    @media screen and (max-width: 890px) {
         flex-direction: row;
         align-items: center;
         margin-bottom: 8px;
         margin-right: 0;
-    }
-    .spares-form__item label {
-        width: 72px;
-    }
-    .spares-form__item button {
-        margin-left: 72px;
+
+        > input {
+            max-width: inherit;
+        }
+
+        label {
+            width: 72px;
+        }
+
+        button {
+            margin-left: 72px;
+        }
     }
 }
 

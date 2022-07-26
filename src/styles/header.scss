@@ -160,17 +160,40 @@ header {
 }
 
 .call {
-    display: flex;
-    flex-direction: row;
     width: 450px;
     margin-top: 40px;
+    font-size: 17px;
+    line-height: 24px;
 
     &__form {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
         width: 100%;
+
+        &.hide {
+            display: none;
+        }
+
+        > input {
+            margin-right: 8px;
+        }
     }
 
-    > input {
-        margin-right: 8px;
+    &__success {
+        display: flex;
+        align-items: flex-start;
+
+        @media screen and (max-width: 558px){
+            background: #f4f4f4;
+            padding: 15px;
+            border-radius: 4px;
+        }
+
+        &>svg {
+            margin-top: 3px;
+            margin-right: 10px;
+        }
     }
 }
 
