@@ -49,6 +49,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    overflow: hidden;
 }
 
 .block_grey {
@@ -94,6 +95,18 @@
     background-repeat: no-repeat;
     width: 96px;
     height: 96px;
+}
+
+.block_yellow:before {
+    content: "";
+    display: block;
+    background-image: url('../assets/header.png');
+    background-size: contain;
+    position: absolute;
+    right: -70px;
+    bottom: -30px;
+    width: 285px;
+    height: 255px;
 }
 
 .result__title {
