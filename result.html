@@ -7,47 +7,108 @@
     <title>Document</title>
 </head>
 <body>
-<section class="main-wrapper">
-    <div class="header-wrapper">
+<div class="header-wrapper">
+    <div class="top-line is-desktop">
         <div class="content-wrapper">
-            <div class="top-line is-desktop">
-                <div class="wrapper">
-                    <span>Казань</span>
-                    <a href="http://emex.ru" class="e-link">Вход</a>
-                </div>
+            <div class="wrapper">
+                <span>Казань</span>
+                <a href="http://emex.ru" class="e-link">Вход</a>
             </div>
-            <header>
-                <div class="wrapper">
-                    <a class="logo-link" href="/result.html">
-                        <!-- <img class="logo is-desktop" src="icons/logo.svg" alt="" /> -->
-                        <!-- <img class="small-logo is-mobile" src="icons/logoSmall.svg" alt="" /> -->
-                    </a>
-
-                    <div class="header-center">
-                        <div class="search">
-                            <input type="text" placeholder="Номер детали, VIN. Пример — 1744977"/>
-                            <button class="is-desktop">Найти</button>
-                            <button class="is-mobile">
-                                <!-- <img src="icons/search.svg" alt=""> -->
-                            </button>
-                        </div>
-
-                        <div class="phone">
-                            <span class="phone-number">+7 (843) 227-08-96</span>
-                            <span class="is-desktop">Бесплатный подбор за 10 минут</span>
-                            <span class="is-mobile">Подбор за 10 минут</span>
-                        </div>
-                    </div>
-
-                    <a class="e-link basket" href="http://emex.ru/basket/" >
-                        <!-- <img src="icons/basket.svg" alt="" width="21" height="19"> -->
-                        <span class="is-desktop">Корзина</span>
-                    </a>
-                </div>
-            </header>
         </div>
     </div>
+    <header class="">
+        <div class="content-wrapper">
+            <div class="wrapper">
+                <a class="logo-link" href="http://emex.ru">
+                    <svg class="logo is-desktop" width="138" height="26">
+                        <use xlink:href="#logo"></use>
+                    </svg>
+                    <svg class="small-logo is-mobile" width="48" height="36">
+                        <use xlink:href="#logoSmall"></use>
+                    </svg>
+                </a>
 
+                <div class="header-center">
+                    <div class="search">
+                        <input type="text" placeholder="Номер детали, VIN. Пример — 1744977"/>
+                        <button class="is-desktop">Найти</button>
+                        <button class="is-mobile">
+                            <svg width="24" height="24">
+                                <use xlink:href="#search"></use>
+                            </svg>
+                        </button>
+                    </div>
+
+                    <div class="phone">
+                        <span class="phone-number">+7 (843) 227-08-96</span>
+                        <span class="is-desktop">Бесплатный подбор за 10 минут</span>
+                        <span class="is-mobile">Подбор за 10 минут</span>
+                    </div>
+                </div>
+
+                <a class="e-link basket" href="http://emex.ru/basket" target="_blank">
+                    <svg width="21" height="19">
+                        <use xlink:href="#basket"></use>
+                    </svg>
+                    <span class="is-desktop">Корзина</span>
+                </a>
+            </div>
+        </div>
+    </header>
+</div>
+<section class="main-wrapper">
+    <div id="expert" class="top-block">
+        <div class="content-wrapper">
+            <h1 class="header-title">Подбор запчастей<br/>экспертом в<br/> Казани</h1>
+            <div class="list">
+                <div class="list-item">
+                    <svg class="list-icon" width="40" height="26">
+                        <use xlink:href="#icon"></use>
+                    </svg>
+                    <span class="list-title">
+                        Быстро
+                    </span>
+                    <span class="list-description">
+                        Подбор за 10 мину<br/>Доставка от 30 минут
+                    </span>
+                </div>
+                <div class="list-item">
+                    <svg class="list-icon" width="26" height="26">
+                        <use xlink:href="#icon1"></use>
+                    </svg>
+                    <span class="list-title">
+                        Качественно
+                    </span>
+                    <span class="list-description">
+                        Гарантия до года, <br/>бесплатный возврат
+                    </span>
+                </div>
+                <div class="list-item">
+                    <svg class="list-icon" width="30" height="26">
+                        <use xlink:href="#icon2"></use>
+                    </svg>
+                    <span class="list-title">
+                        Надежно
+                    </span>
+                    <span class="list-description">
+                        Работаем с 24 года <br/>в России, 20 лет в Казани
+                    </span>
+                </div>
+            </div>
+            <div class="call">
+                <form action="" class="call__form">
+                    <input type="text" placeholder="+7 000 000 00 00">
+                    <button>Перезвонить</button>
+                </form>
+                <div class="call__success">
+                    <svg width="21" height="19">
+                        <use xlink:href="#successWhite"></use>
+                    </svg>
+                    <span>Сообщение успешно отправлено</span>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="main-content">
         <div class="content-wrapper">
             <div class="results">
@@ -64,10 +125,18 @@
                     </div>
                     <div class="result__block block_grey">
                         <div class="result__title">Оставьте телефон <br/>и мы перезвоним</div>
-                        <form action="" class="results__form">
-                            <input class="results__input" type="text" placeholder="+7 000 000 00 00">
-                            <button class="results__button">Перезвонить</button>
-                        </form>
+                        <div class="results__form">
+                            <form action="" class="results-form">
+                                <input class="results__input" type="text" placeholder="+7 000 000 00 00">
+                                <button class="results__button">Перезвонить</button>
+                            </form>
+                            <div class="call__success">
+                                <svg width="21" height="19">
+                                    <use xlink:href="#successYellow"></use>
+                                </svg>
+                                <span>Сообщение успешно отправлено</span>
+                            </div>
+                        </div>
                     </div>
                     <div class="result__block block_yellow">
                         <div class="result__title">Спросить по телефону<br/>
