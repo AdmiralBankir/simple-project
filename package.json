@@ -38,7 +38,6 @@
     "html-loader": "^4.1.0",
     "html-webpack-plugin": "^5.3.2",
     "mini-css-extract-plugin": "^2.3.0",
-    "node-sass": "^6.0.1",
     "sass-loader": "^12.1.0",
     "style-loader": "^3.2.1",
     "svg-sprite-loader": "^6.0.9",
@@ -52,6 +51,7 @@
   },
   "dependencies": {
     "disable-scroll": "^0.6.0",
+    "node-sass": "^7.0.1",
     "normalize.css": "^8.0.1"
   }
 }
