@@ -46,7 +46,56 @@ function initMap() {
     const balloonLayout = window.ymaps.templateLayoutFactory.createClass(
       '<div class="map__pin-layout">' +
                 '$[[options.contentLayout observeSize minWidth=312 minHeight=138]]' +
-                '</div>',
+                '</div>', 
+      {
+        build: function() {
+          this.constructor.superclass.build.call(this);
+          this.$element = document.querySelector('.map__pin-layout');
+          this.closeBtn = this.$element.querySelector('.map-pin__close');
+          this.closeBtn.addEventListener('click', this._onCloseButtonClick.bind(this));
+        },
+        clear: function() {
+          this.closeBtn.removeEventListener('click', this._onCloseButtonClick);
+          this.constructor.superclass.clear.call(this);
+        },
+        /**
+                           * Используется для автопозиционирования (balloonAutoPan).
+                           * @see https://api.yandex.ru/maps/doc/jsapi/2.1/ref/reference/ILayout.xml#getClientBounds
+                           * @function
+                           * @name getClientBounds
+                           * @returns {Number[][]} Координаты левого верхнего и правого нижнего углов шаблона относительно точки привязки.
+                           */
+        getShape: function() {      
+          const position = {
+            top: this.$element.offsetTop,
+            left: this.$element.offsetLeft,
+          };
+          
+          console.log('getShape ', position, this.$element.offsetWidth, this.$element.offsetHeight, this.$element);
+                
+          return new window.ymaps.shape.Rectangle(new window.ymaps.geometry.pixel.Rectangle([
+            [position.left, position.top], [
+              position.left + this.$element.offsetWidth,
+              position.top + this.$element.offsetHeight + 40,
+            ],
+          ]));
+        },
+        /**
+                           * Метод будет вызван системой шаблонов АПИ при изменении размеров вложенного макета.
+                           * @see https://api.yandex.ru/maps/doc/jsapi/2.1/ref/reference/IBalloonLayout.xml#event-userclose
+                           * @function
+                           * @name onSublayoutSizeChange
+                           */
+        onSublayoutSizeChange: function() {
+          balloonContentLayout.superclass.onSublayoutSizeChange.apply(this, arguments);
+                
+          this.events.fire('shapechange');
+        },
+        _onCloseButtonClick: function(e) {
+          e.preventDefault();
+          this.events.fire('userclose');
+        },
+      },
     );
     const balloonContentLayout = window.ymaps.templateLayoutFactory.createClass(
       `
@@ -60,23 +109,7 @@ function initMap() {
           </svg>
         </button>
       </address>
-        `, {
-        build: function() {
-          this.constructor.superclass.build.call(this);
-          this.$element = document.querySelector('.map__pin-layout');
-          this.closeBtn = this.$element.querySelector('.map-pin__close');
-          this.closeBtn.addEventListener('click', this._onCloseButtonClick.bind(this));
-        },
-        clear: function() {
-          this.closeBtn.removeEventListener('click', this._onCloseButtonClick);
-          this.constructor.superclass.clear.call(this);
-        },
-        _onCloseButtonClick: function(e) {
-          e.preventDefault();
-          this.events.fire('userclose');
-        },
-      },
-    );
+        `);
     const officePlacemark = (window.officePlacemark = new window.ymaps.Placemark(
       [pin.latitude, pin.longitude],
       {
