@@ -1,4 +1,5 @@
-import pin from 'assets/map-icon.svg';
+import pinIcon from 'assets/map-icon.svg';
+import PINS from './data/pins';
 const API_KEY = '22bee5d8-836c-4b8f-9531-35fb945a7911';
 
 const mapScript = `https://api-maps.yandex.ru/2.1/?apikey=${API_KEY}&lang=ru_RU`;
@@ -10,7 +11,6 @@ const options = {
 const callback = function(entries) {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
-      console.log('insertScript');
       insertScipt();
     }
   });
@@ -39,62 +39,64 @@ function initMap() {
   const myMap = new window.ymaps.Map('map', {
     center: [55.79827854997976, 49.10946665314929],
     zoom: 12,
-    controls: [],
+    controls: ['zoomControl'],
   });
 
-  const balloonLayout = window.ymaps.templateLayoutFactory.createClass(
-    '<div class="map__pin-layout">' +
-              '$[[options.contentLayout observeSize minWidth=312 minHeight=138]]' +
-              '</div>',
-  );
-  const balloonContentLayout = window.ymaps.templateLayoutFactory.createClass(
-    `
-      <address class="map__pin">
-      <h3 class="map__pin-title h3">Эмекс на Беломорской</h3>
-      <p class="map__pin-text">режим работы</p>
-      <p class="map__pin-text">адрес</p>
-      <button class="map-pin__close" type="button" aria-label="Закрыть подробную информацию">
-        <svg width="24" height="24">
-          <use xlink:href="#close"></use>
-        </svg>
-      </button>
-    </address>
-      `, {
-      build: function() {
-        this.constructor.superclass.build.call(this);
-        this.$element = document.querySelector('.map__pin-layout');
-        this.closeBtn = this.$element.querySelector('.map-pin__close');
-        this.closeBtn.addEventListener('click', this._onCloseButtonClick.bind(this));
+  PINS.forEach((pin) => {
+    const balloonLayout = window.ymaps.templateLayoutFactory.createClass(
+      '<div class="map__pin-layout">' +
+                '$[[options.contentLayout observeSize minWidth=312 minHeight=138]]' +
+                '</div>',
+    );
+    const balloonContentLayout = window.ymaps.templateLayoutFactory.createClass(
+      `
+        <address class="map__pin">
+        <h3 class="map__pin-title h3">${pin.name}</h3>
+        <p class="map__pin-text">${pin.schedule}</p>
+        <p class="map__pin-text">${pin.address.replace('Россия, Республика Татарстан, Казань,', '')}</p>
+        <button class="map-pin__close" type="button" aria-label="Закрыть подробную информацию">
+          <svg width="24" height="24">
+            <use xlink:href="#close"></use>
+          </svg>
+        </button>
+      </address>
+        `, {
+        build: function() {
+          this.constructor.superclass.build.call(this);
+          this.$element = document.querySelector('.map__pin-layout');
+          this.closeBtn = this.$element.querySelector('.map-pin__close');
+          this.closeBtn.addEventListener('click', this._onCloseButtonClick.bind(this));
+        },
+        clear: function() {
+          this.closeBtn.removeEventListener('click', this._onCloseButtonClick);
+          this.constructor.superclass.clear.call(this);
+        },
+        _onCloseButtonClick: function(e) {
+          e.preventDefault();
+          this.events.fire('userclose');
+        },
       },
-      clear: function() {
-        this.closeBtn.removeEventListener('click', this._onCloseButtonClick);
-        this.constructor.superclass.clear.call(this);
+    );
+    const officePlacemark = (window.officePlacemark = new window.ymaps.Placemark(
+      [pin.latitude, pin.longitude],
+      {
+        balloonContent: 'Отдел продаж',
       },
-      _onCloseButtonClick: function(e) {
-        e.preventDefault();
-        this.events.fire('userclose');
+      {
+        iconLayout: 'default#image',
+        iconImageHref: pinIcon,
+        iconImageSize: [76, 76],
+        iconImageOffset: [-38, -38],
+  
+        balloonShadow: false,
+        balloonLayout: balloonLayout,
+        balloonContentLayout: balloonContentLayout,
+        balloonPanelMaxMapArea: 0,
+        balloonOffset: [-156, -143],
+        hideIconOnBalloonOpen: true,
       },
-    },
-  );
-  const officePlacemark = (window.officePlacemark = new window.ymaps.Placemark(
-    [55.86778356887693, 49.054616999999965],
-    {
-      balloonContent: 'Отдел продаж',
-    },
-    {
-      iconLayout: 'default#image',
-      iconImageHref: pin,
-      iconImageSize: [76, 76],
-      iconImageOffset: [-38, -38],
+    ));
+    myMap.geoObjects.add(officePlacemark);
+  });
 
-      balloonShadow: false,
-      balloonLayout: balloonLayout,
-      balloonContentLayout: balloonContentLayout,
-      balloonPanelMaxMapArea: 0,
-      balloonOffset: [-180, -167],
-      hideIconOnBalloonOpen: false,
-    },
-  ));
-
-  myMap.geoObjects.add(officePlacemark);
 }
