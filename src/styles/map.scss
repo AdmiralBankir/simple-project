@@ -1,0 +1,71 @@
+.map {
+    margin-bottom: 72px;
+}
+
+.map__container {
+    width: 100%;
+    height: 472px;
+    background: #ffffff;
+    box-shadow: 0px 4px 30px rgba(108, 72, 0, 0.2);
+    border-radius: 4px;
+    padding: 10px;
+}
+
+// Title
+.map__pin-title {
+    border-bottom: 2px solid #ffbf33;
+    padding-bottom: 2px;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+// Text
+.map__pin-text {
+    margin: 0;
+    font-family: 'Graphik LC', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+
+    & + & {
+        margin-top: 1px;
+    }
+}
+
+// Pin
+.map__pin {
+    --bg-pin-color: #ffffff;
+    background-color: var(--bg-pin-color);
+    padding: 24px;
+    min-height: 138px;
+    width: 312px;
+    font-style: normal;
+    position: relative;
+
+    &::after {
+        --pin-size: 20px;
+        content: '';
+        position: absolute;
+        top: 100%;
+        left: calc(50% - var(--pin-size));
+        border: var(--pin-size) solid transparent; border-top: var(--pin-size) solid var(--bg-pin-color);;
+    }
+}
+
+// Layout
+.map__pin-layout ymaps {
+    overflow: visible !important;
+}
+
+// Close button
+.map-pin__close {
+    background: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 8px;
+    right: 11px;
+    line-height: 0;
+    height: auto;
+}

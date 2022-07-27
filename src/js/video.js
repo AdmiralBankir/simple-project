@@ -48,7 +48,6 @@ const getPlayIcon = () => {
 };
 
 export default function createVideo(id) {
-  console.log(video);
   if (!video) {return;}
   const item = document.createElement('div');
   const link = document.createElement('a');

@@ -6,3 +6,4 @@ import '@/styles/common/fonts.scss';
 
 // js
 import '@/js/scripts.js';
+import '@/js/map.js';
