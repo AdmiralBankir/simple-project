@@ -22,10 +22,21 @@
 
 // Title
 .map__pin-title {
+    margin: 0;
     border-bottom: 2px solid #ffbf33;
     padding-bottom: 2px;
     display: inline-block;
     margin-bottom: 10px;
+    font-family: 'Graphik LC', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 24px;
+
+    & a {
+        text-decoration: none;
+        color: inherit;
+    }
 }
 
 // Text

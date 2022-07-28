@@ -95,10 +95,15 @@ function initMap() {
         },
       },
     );
+
+    const mapLink = `https://yandex.ru/maps/?pt=${pin.longitude},${pin.latitude}&z=18&l=map`;
+    
     const balloonContentLayout = window.ymaps.templateLayoutFactory.createClass(
       `
         <address class="map__pin">
-        <h3 class="map__pin-title h3">${pin.name}</h3>
+        <h3 class="map__pin-title">
+          <a href="${mapLink}" target="_blank">${pin.name}</a>
+        </h3>
         <p class="map__pin-text">${pin.schedule}</p>
         <p class="map__pin-text">${pin.address.replace('Россия, Республика Татарстан, Казань,', '')}</p>
         <button class="map-pin__close" type="button" aria-label="Закрыть подробную информацию">
