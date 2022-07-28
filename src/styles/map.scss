@@ -51,6 +51,7 @@
     width: 312px;
     font-style: normal;
     position: relative;
+    box-shadow: 0px 4px 30px rgba(108, 72, 0, 0.2);
 
     &::after {
         --pin-size: 20px;
@@ -59,6 +60,10 @@
         top: 100%;
         left: calc(50% - var(--pin-size));
         border: var(--pin-size) solid transparent; border-top: var(--pin-size) solid var(--bg-pin-color);;
+    }
+
+    @media screen and (max-width: 736px) {
+        width: 250px;
     }
 }
 

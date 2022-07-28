@@ -70,8 +70,6 @@ function initMap() {
             top: this.$element.offsetTop,
             left: this.$element.offsetLeft,
           };
-          
-          console.log('getShape ', position, this.$element.offsetWidth, this.$element.offsetHeight, this.$element);
                 
           return new window.ymaps.shape.Rectangle(new window.ymaps.geometry.pixel.Rectangle([
             [position.left, position.top], [
