@@ -121,7 +121,7 @@ function initMap() {
       {
         iconLayout: 'default#image',
         iconImageHref: pinIcon,
-        iconImageSize: [76, 76],
+        iconImageSize: [32, 48],
         iconImageOffset: [-38, -38],
   
         balloonShadow: false,
