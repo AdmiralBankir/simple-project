@@ -97,7 +97,7 @@ function initMap() {
     );
 
     const mapLink = `https://yandex.ru/maps/?pt=${pin.longitude},${pin.latitude}&z=18&l=map`;
-    
+
     const balloonContentLayout = window.ymaps.templateLayoutFactory.createClass(
       `
         <address class="map__pin">
