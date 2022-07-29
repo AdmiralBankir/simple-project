@@ -4,6 +4,7 @@ import stickyHeader from '@/js/sticky-header';
 import tab from '@/js/tabs.js';
 import popup from '@/js/popup.js';
 import createVideo from './video';
+import inirForms from './callback-form';
 
 const videoId = 'hDXI8A0-UCA';
 
@@ -62,6 +63,7 @@ window.onload = function() {
   // };
 
   popup();
+  inirForms();
 
   createVideo(videoId);
 };
