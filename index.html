@@ -98,9 +98,9 @@
         </div>
       </div>
       <div class="call">
-        <form action="" class="call__form">
-          <input type="text" placeholder="+7 000 000 00 00">
-          <button>Перезвонить</button>
+        <form class="call__form" id="callback-form">
+          <input type="text" name="phone" placeholder="+7 000 000 00 00">
+          <button type="submit">Перезвонить</button>
         </form>
         <div class="call__success">
           <svg width="21" height="19">
@@ -368,8 +368,8 @@
               Доставка от 30 минут.
             </p>
           </div>
-          <div class="spares__form">
-            <form class="spares-form" action="">
+        <div class="spares__form">
+            <form class="spares-form" id="callback-form">
               <div class="spares-form__item">
                 <label>ИМЯ</label>
                 <input type="text" name="name" placeholder="Иван Иванов">
@@ -603,7 +603,7 @@
             </p>
           </div>
           <div class="spares__form">
-            <form class="spares-form" action="">
+            <form class="spares-form" id="callback-form">
               <div class="spares-form__item">
                 <label>ИМЯ</label>
                 <input type="text" name="name" placeholder="Иван Иванов">
@@ -675,9 +675,9 @@
       <p>Поможем купить качественные запчасти по лучшей цене за 10 минут.
         Доставка от 30 минут.</p>
       <div class="call">
-        <form action="" class="call__form successed">
-          <input class="input__grey" type="text" placeholder="+7 000 000 00 00">
-          <button class="button_yellow">Перезвонить</button>
+        <form action="" class="call__form successed" id="callback-form">
+          <input class="input__grey" type="text" name="phone" placeholder="+7 000 000 00 00">
+          <button type="submit" class="button_yellow">Перезвонить</button>
         </form>
         <div class="call__success">
           <svg width="21" height="19">
@@ -689,6 +689,7 @@
     </div>
   </div>
 </div>
+<script src="//cdn.callibri.ru/callibri.js" type="text/javascript" charset=«utf-8»></script>
 </body>
 </html>
 
