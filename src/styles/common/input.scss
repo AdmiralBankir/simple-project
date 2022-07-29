@@ -10,6 +10,10 @@ input {
     font-size: 17px;
     line-height: 24px;
     box-sizing: border-box;
+
+    &:focus-within {
+        outline: 2px solid blue;
+    }
 }
 
 @media screen and (max-width: 992px) {

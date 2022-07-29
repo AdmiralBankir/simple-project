@@ -102,7 +102,7 @@ function initMap() {
       `
         <address class="map__pin">
         <h3 class="map__pin-title">
-          <a href="${mapLink}" target="_blank">${pin.name}</a>
+          <a class="map__pin-link" href="${mapLink}" target="_blank">${pin.name}</a>
         </h3>
         <p class="map__pin-text">${pin.schedule}</p>
         <p class="map__pin-text">${pin.address.replace('Россия, Республика Татарстан, Казань,', '')}</p>

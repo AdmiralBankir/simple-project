@@ -73,6 +73,23 @@ header {
 .search-form {
     display: flex;
 
+    & input {
+        font-size: 14px;
+        line-height: 20px;
+        border-bottom-left-radius: 4px;
+        border-bottom-right-radius: 0;
+        border-right: none;
+        border-top-left-radius: 4px;
+        border-top-right-radius: 0;
+    }
+
+    & button {
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 4px;
+        border-top-left-radius: 0;
+        border-top-right-radius: 4px
+    }
+
     .search > input {
         border-radius: 4px 0 0 4px;
     }
@@ -93,6 +110,8 @@ header {
     font-size: 17px;
     line-height: 24px;
     font-weight: 700;
+    color:  #000000;
+    text-decoration: none;
 }
 
 .basket {
@@ -149,6 +168,10 @@ header {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 24px;
 }
 
 .list-item + .list-item {
@@ -237,10 +260,38 @@ div.success form {
         line-height: 65px;
     }
 
+    .header-center {
+        width: 72%;
+    }
+
     .call {
         width: 368px;
     }
+
+    .list {
+        flex-direction: column;
+    }
+
+    .list-item {
+        margin-left: 60px;
+        position: relative;
+        font-size: 17px;
+    }
+
+    .list-item + .list-item {
+        margin-left: 60px;
+        margin-top: 20px;
+    }
+
+    .list-icon {
+        position: absolute;
+        top: 5px;
+        left: -51px;
+        width: 40px;
+        height: 26px;
+    }
 }
+
 @media screen and (max-width: 890px) {
     .header-center {
         width: 80%;
@@ -261,24 +312,11 @@ div.success form {
         padding: 3px 0 0;
         flex-shrink: 0;
     }
-    .list {
-        flex-direction: column;
-    }
-    .list-item {
-        margin-left: 60px;
-        position: relative;
-        font-size: 17px;
-    }
-    .list-item + .list-item {
-        margin-left: 60px;
-        margin-top: 20px;
-    }
-    .list-icon {
-        position: absolute;
-        top: 5px;
-        left: -51px;
-        width: 40px;
-        height: 26px;
+}
+
+@media screen and (max-width: 735px) {
+    .search {
+        display: none;
     }
 }
 
@@ -304,9 +342,6 @@ div.success form {
     }
     .header-center {
         width: 60%;
-    }
-    .search {
-        display: none;
     }
     .phone {
         margin-left: 0;
