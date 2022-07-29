@@ -107,8 +107,8 @@
                 </div>
             </div>
             <div class="call">
-                <form action="" class="call__form">
-                    <input type="text" placeholder="+7 000 000 00 00">
+                <form action="" class="call__form" id="callback-form">
+                    <input type="text" placeholder="+7 000 000 00 00" name="phone" required>
                     <button>Перезвонить</button>
                 </form>
                 <div class="call__success">
@@ -137,8 +137,8 @@
                     <div class="result__block block_grey">
                         <div class="result__title">Оставьте телефон <br/>и мы перезвоним</div>
                         <div class="results__form">
-                            <form action="" class="results-form">
-                                <input class="results__input" type="text" placeholder="+7 000 000 00 00">
+                            <form class="results-form" id="callback-form">
+                                <input class="results__input" type="text" name="phone" placeholder="+7 000 000 00 00" required>
                                 <button class="results__button">Перезвонить</button>
                             </form>
                             <div class="call__success">
