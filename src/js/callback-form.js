@@ -45,7 +45,10 @@ export default function inirForms() {
       evt.preventDefault();
       const data = getFormData(form);
       if (sendData(data)) {
-        console.log('success');
+        form.parentNode.classList.add('success');
+      } else {
+        //eslint-disable-next-line
+        alert('Что-то пошло не так. Пожалуйста, повторите отправку формы');
       }
     });
   });

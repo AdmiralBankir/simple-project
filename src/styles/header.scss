@@ -203,6 +203,15 @@ header {
     }
 }
 
+div.success .call__success {
+    display: flex;
+}
+
+div.success form {
+    display: none;
+}
+
+
 @media screen and (max-width: 1472px) {}
 @media screen and (max-width: 1182px) {
     .content-wrapper {
