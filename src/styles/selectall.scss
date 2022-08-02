@@ -1,6 +1,6 @@
 .select-all {
     position: relative;
-    padding-bottom: 48px;
+    padding-bottom: 72px;
 }
 
 .select-all:before {
@@ -19,6 +19,9 @@
 }
 
 @media screen and (max-width: 558px) {
+    .select-all {
+        padding-bottom: 48px;
+    }
     .select-all:before {
         top: 20px;
         width: 100%;

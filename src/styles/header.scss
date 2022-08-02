@@ -197,7 +197,6 @@ header {
     &__form {
         display: flex;
         flex-direction: row;
-        flex-wrap: wrap;
         width: 100%;
 
         &.hide {
@@ -207,12 +206,21 @@ header {
         > input {
             margin-right: 8px;
         }
+
+        @media screen and (max-width: 558px){
+            flex-wrap: wrap;
+        }
     }
 
     &__success {
         //display: flex;
         display: none;
         align-items: flex-start;
+        height: 56px;
+
+        @media screen and (max-width: 992px){
+            height: 40px;
+        }
 
         @media screen and (max-width: 558px){
             background: #f4f4f4;

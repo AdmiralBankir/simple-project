@@ -75,9 +75,13 @@ body {
 }
 
 .main-content {
-  padding-top: 40px;
+  padding-top: 72px;
   position: relative;
   overflow-x: hidden;
+
+  @media screen and (max-width: 558px) {
+    padding-top: 48px;
+  }
 }
 
 .wrapper {
@@ -90,7 +94,7 @@ body {
 
 a {
   transition: color .3s;
-  
+
   &:hover {
     color: #ff0000;
   }
