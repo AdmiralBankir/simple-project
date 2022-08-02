@@ -10,10 +10,10 @@ function getFormData(form) {
   const nameInput = form.querySelector('input[name="name"]');
   const vinInput = form.querySelector('input[name="vin"]');
 
-  if (form.classList.contains('.callback-form') || form.classList.contains('.callback-form-popup')) {
-    data.fields.TITLE = 'Обратный звонок kazan.emex.ru (test)';
-  } else if (form.classList.contains('.form-podbor') || form.classList.contains('.form-podbor-2')) {
-    data.fields.TITLE = 'Подбор по VIN kazan.emex.ru (test1)';
+  if (form.classList.contains('callback-form') || form.classList.contains('callback-form-popup')) {
+    data.fields.TITLE = 'Обратный звонок kazan.emex.ru';
+  } else if (form.classList.contains('form-podbor') || form.classList.contains('form-podbor-2')) {
+    data.fields.TITLE = 'Подбор по VIN kazan.emex.ru';
   }
 
   if (phoneNumberInput) {
