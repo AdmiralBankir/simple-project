@@ -70,6 +70,7 @@ const webpackConfig = {
     new CopyPlugin({
       patterns: [
         { from: 'src/favicon', to: 'favicon' },
+        { from: 'src/docx', to: 'docx' },
       ],
     }),
   ],
