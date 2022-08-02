@@ -116,20 +116,21 @@
     line-height: 24px;
 }
 
-.result__phone {
-    position: relative;
+.result__link {
     display: inline-block;
     line-height: 17px;
+    position: relative;
 }
 
-.result__phone>span {
+.result__phone {
+    color: #000;
+    text-decoration: none;
     display: inline-block;
     position: relative;
     z-index: 2;
 }
 
-.result__phone:before {
-    content: "";
+.result__link>span {
     display: block;
     position: absolute;
     bottom: 0;
