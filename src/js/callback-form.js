@@ -1,6 +1,7 @@
 //const URL = 'https://emex.bitrix24.ru/rest/9873/z56lfbjkxa3g1o1o/crm.lead.add.json';
 //const URL = 'https://emex.bitrix24.ru/rest/9873/xsr1kjknbu4mb5cg/crm.lead.add.json';
-const URL = 'https://emex.bitrix24.ru/rest/9873/h5s7egjkgzngmfr9/crm.lead.add.json';
+//const URL = 'https://emex.bitrix24.ru/rest/9873/h5s7egjkgzngmfr9/crm.lead.add.json';
+const URL = 'https://emex.bitrix24.ru/rest/9873/o74mq9dvno1rroy7/crm.lead.add.json';
 
 const forms = document.querySelectorAll('.form-bitrix24');
 
@@ -30,7 +31,7 @@ function getFormData(form) {
   }
 
   if (vinInput) {
-    data.fields.VIN = vinInput.value;
+    data.fields.UF_CRM_1569313419 = vinInput.value;
   }
 
   return data;
