@@ -31,7 +31,7 @@ window.onload = function() {
     const text = document.location.search;
     if (text.length>1) {
       const i = text.indexOf('=') + 1;
-      result.textContent = text.substring(i);
+      result.textContent = decodeURI(text.substring(i));
     }
   }
 
