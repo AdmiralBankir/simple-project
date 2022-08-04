@@ -44,6 +44,42 @@
     }
 }
 
+.tabs__item.tab2 .our-work__list {
+    padding-top: 48px;
+
+    @media screen and (max-width: 700px) {
+        padding-top: 70px;
+    }
+
+    @media screen and (max-width: 650px) {
+        padding-top: 64px;
+    }
+
+    @media screen and (max-width: 600px) {
+        padding-top: 62px;
+    }
+
+    @media screen and (max-width: 550px) {
+        padding-top: 57px;
+    }
+
+    @media screen and (max-width: 500px) {
+        padding-top: 53px;
+    }
+
+    @media screen and (max-width: 414px) { //iPhone XR
+        padding-top: 48px;
+    }
+
+    @media screen and (max-width: 390px) { //iPhone 12 pro
+        padding-top: 50px;
+    }
+
+    @media screen and (max-width: 375px) { //iPhone SE
+        padding-top: 48px;
+    }
+}
+
 .tabs__pointer {
     width: 100px;
     height: 0;
