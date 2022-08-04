@@ -100,13 +100,18 @@
 .block_yellow:before {
     content: "";
     display: block;
-    background-image: url('../assets/header.png');
+    background-image: url('../assets/header@1x.png');
     background-size: contain;
     position: absolute;
     right: -70px;
     bottom: -30px;
     width: 285px;
     height: 255px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url('../assets/header@2x.png');
+        background-size: contain;
+    }
 }
 
 .result__title {

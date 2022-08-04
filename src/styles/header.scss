@@ -1,3 +1,5 @@
+$retina-dpi: 144dpi;
+$retina-dppx: 1.5dppx;
 
 .header-wrapper {
     height: 120px;
@@ -136,7 +138,7 @@ header {
 
 .top-block:before {
     content:'';
-    background-image: url('../assets/header.png');
+    background-image: url('../assets/header@1x.png');
     background-repeat: no-repeat;
     background-position: bottom left;
     background-size: contain;
@@ -146,6 +148,13 @@ header {
     position: absolute;
     bottom: 0;
     left: calc(50% + 80px);
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url('../assets/header@2x.png');
+        background-repeat: no-repeat;
+        background-position: bottom left;
+        background-size: contain;
+    }
 }
 
 .header-title {

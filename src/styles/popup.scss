@@ -52,7 +52,7 @@
     &:before {
         content: "";
         display: block;
-        background-image: url("../assets/header.png");
+        background-image: url("../assets/header@1x.png");
         background-position: 100% 100%;
         background-size: contain;
         background-repeat: no-repeat;
@@ -62,6 +62,13 @@
         width: 283px;
         height: 283px;
         z-index: -1;
+
+        @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+            background-image: url('../assets/header@2x.png');
+            background-position: 100% 100%;
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
 
         @media screen and (max-width: 736px) {
             right: -102px;
