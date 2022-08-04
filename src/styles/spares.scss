@@ -4,13 +4,19 @@
     padding: 32px 24px 24px;
     margin-bottom: 60px;
     min-height: 412px;
+    height: 434px;
     box-sizing: border-box;
     position: relative;
     overflow: hidden;
     z-index: 0;
 
+    @media screen and (max-width: 890px) {
+        height: 580px;
+    }
+
     @media screen and (max-width: 736px) {
         padding: 24px 16px 16px;
+        height: 516px;
     }
 
     &:before {
