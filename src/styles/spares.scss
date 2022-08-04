@@ -92,6 +92,12 @@
 
 .spares-form__text {
     width: 100%;
+    font-family: 'Graphik LC';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #787878;
 }
 
 .spares-form__item {
@@ -126,6 +132,10 @@
 .spares__description {
     width: 100%;
     max-width: 642px;
+}
+
+.spares__description .h2 {
+    margin-bottom: 16px;
 }
 
 .spares__description > p {
