@@ -1,5 +1,37 @@
 .map {
     margin-bottom: 72px;
+    position: relative;
+
+    &:before {
+        content: "";
+        display: block;
+        position: absolute;
+        left: -100px;
+        top: -103px;
+        width: 779px;
+        height: 766px;
+        background: url("../assets/spares.png") top right no-repeat;
+        background-size: contain;
+        z-index: -1;
+
+        @media screen and (max-width: 992px) {
+            height: 750px;
+            left: -85px;
+            top: -78px;
+        }
+
+        @media screen and (max-width: 736px) {
+            height: 747px;
+            left: -49px;
+            top: -134px;
+        }
+
+        @media screen and (max-width: 634px) {
+            height: 650px;
+            left: -105%;
+            top: -80px;
+        }
+    }
 }
 
 .map__container {
