@@ -18,6 +18,10 @@ button:hover {
     background-color: #313131;
 }
 
+button:active {
+    box-shadow: inset 0 2px 0 #6d6c6c;
+}
+
 @media screen and (max-width: 992px) {
     button {
         font-size: 14px;
