@@ -100,6 +100,10 @@ a {
   }
 }
 
+:target {
+  scroll-margin-top: 56px;
+}
+
 @import './common/button.scss';
 @import './common/input.scss';
 @import './common/tabs.scss';
