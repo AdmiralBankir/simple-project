@@ -125,6 +125,10 @@
     width: var(--btn-size);
     height: var(--btn-size);
 
+    &:hover {
+        background: none;
+    }
+
     & svg {
         width: var(--btn-size);
         height: var(--btn-size);

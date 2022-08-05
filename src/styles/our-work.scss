@@ -84,7 +84,6 @@
     height: 200px;
     background-repeat: no-repeat;
     background-position: left top;
-    background-size: cover;
     flex: 440px 1 0;
 
     .tab1 .our-work__item:nth-child(1) & {
@@ -93,6 +92,7 @@
 
     .tab2 .our-work__item:nth-child(1) & {
         background-image: url('../assets/our-work1-1.png');
+        background-size: 440px 200px;
     }
 
     .tab1 .our-work__item:nth-child(2) &,
@@ -126,9 +126,9 @@
     height: 242px;
 }
 
-.tab2 .our-work__item:first-child .our-work__img {
-    height: 234px;
-}
+// .tab2 .our-work__item:first-child .our-work__img {
+//     height: 234px;
+// }
 
 .tab1 .our-work__item:last-child .our-work__img,
 .tab2 .our-work__item:last-child .our-work__img {

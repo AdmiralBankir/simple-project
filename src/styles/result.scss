@@ -84,17 +84,9 @@
     }
 }
 
-.block_whatsapp:after {
-    content: "";
-    position: absolute;
-    right: 16px;
-    bottom: 16px;
-    background-image: url("../assets/whatsapp.png");
-    background-position: 0 0;
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 96px;
-    height: 96px;
+.block_whatsapp-link {
+    align-self: flex-end;
+    cursor: pointer;
 }
 
 .block_yellow:before {
@@ -121,12 +113,6 @@
     line-height: 24px;
     text-decoration: none;
     color: #000000;
-
-    &::before {
-        position: absolute;
-        content: '';
-        inset: 0;
-    }
 }
 
 .result__link {

@@ -19,6 +19,14 @@
         height: 516px;
     }
 
+    @media screen and (max-width: 640px) {
+        height: 580px;
+    }
+
+    @media screen and (max-width: 350px) {
+        height: 550px;
+    }
+
     &:before {
         content: "";
         display: block;
@@ -98,6 +106,10 @@
     font-size: 14px;
     line-height: 20px;
     color: #787878;
+
+    @media screen and (max-width: 890px) {
+        max-width: 300px;
+    }
 }
 
 .spares-form__item {
@@ -143,6 +155,7 @@
     font-weight: 400;
     font-size: 17px;
     line-height: 24px;
+    margin: 16px 0;
 }
 
 @media screen and (max-width: 890px) {
