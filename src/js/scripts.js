@@ -8,66 +8,70 @@ import inirForms from './callback-form';
 import inputValidationInit from './inputValidation';
 
 const videoId = 'hDXI8A0-UCA';
+const SEARCH_UTM =
+    '?utm_source=kazan.emex.ru&utm_id=main&utm_term=search_button';
 
-window.onload = function() {
-  if (document.querySelectorAll('.car-brand__tabs').length) {
-    tab('.car-brand__tabs');
-  }
-  if (document.querySelectorAll('.our-work__tabs').length) {
-    tab('.our-work__tabs');
-  }
-
-  const sticky = document.querySelector('header').offsetTop;
-  if (sticky) {
-    stickyHeader(sticky);
-
-    window.onscroll = function() {
-      stickyHeader(sticky);
-    };
-  }
-
-  // отображаем текст поиска на result.html
-  const result = document.querySelector('.results-text');
-  if (result) {
-    const text = document.location.search;
-    if (text.length > 1) {
-      const i = text.indexOf('=') + 1;
-      result.textContent = decodeURI(text.substring(i));
+window.onload = function () {
+    if (document.querySelectorAll('.car-brand__tabs').length) {
+        tab('.car-brand__tabs');
     }
-  }
+    if (document.querySelectorAll('.our-work__tabs').length) {
+        tab('.our-work__tabs');
+    }
 
-  const searchForm = document.querySelector('.search-form');
+    const sticky = document.querySelector('header').offsetTop;
+    if (sticky) {
+        stickyHeader(sticky);
 
-  if (searchForm) {
-    const regexNumber = /^\d+/;
-    //const regexVIN = new RegExp('^[A-HJ-NPR-Z\\d]{8}[\\dX][A-HJ-NPR-Z\\d]{2}[A-Z0-9-]\\d{5}$');
-    const regexVIN = new RegExp(
-      '^[A-HJ-NPR-Z\\d]{8}[\\dA-Z][A-HJ-NPR-Z\\d]{2}[A-Z0-9-]\\d{5}$',
-    );
+        window.onscroll = function () {
+            stickyHeader(sticky);
+        };
+    }
 
-    searchForm.addEventListener('submit', (e) => {
-      e.preventDefault();
-      const input = document.querySelector('.search-form>input');
+    // отображаем текст поиска на result.html
+    const result = document.querySelector('.results-text');
+    if (result) {
+        const text = document.location.search;
+        if (text.length > 1) {
+            const i = text.indexOf('=') + 1;
+            result.textContent = decodeURI(text.substring(i));
+        }
+    }
 
-      if (regexNumber.test(input.value)) {
-        location.href = 'https://emex.ru/products/' + input.value;
-      } else if (regexVIN.test(input.value)) {
-        // vin for test: Z6FAXXESMAJT02521, WAUBH54B11N111054, WDF44781313229645
-        location.href =
-          'https://emex.ru/catalogs/original2/modifications?vin=' + input.value;
-      } else {
-        location.href = '/result.html?search=' + input.value;
-      }
-    });
-  }
+    const searchForm = document.querySelector('.search-form');
 
-  // window.resize = function() {
-  //   sticky = document.querySelector('header').offsetTop;
-  // };
+    if (searchForm) {
+        const regexNumber = /^\d+/;
+        //const regexVIN = new RegExp('^[A-HJ-NPR-Z\\d]{8}[\\dX][A-HJ-NPR-Z\\d]{2}[A-Z0-9-]\\d{5}$');
+        const regexVIN = new RegExp(
+            '^[A-HJ-NPR-Z\\d]{8}[\\dA-Z][A-HJ-NPR-Z\\d]{2}[A-Z0-9-]\\d{5}$'
+        );
 
-  popup();
-  inirForms();
-  inputValidationInit();
+        searchForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const input = document.querySelector('.search-form>input');
 
-  createVideo(videoId);
+            if (regexNumber.test(input.value)) {
+                location.href =
+                    'https://emex.ru/products/' + input.value + SEARCH_UTM;
+            } else if (regexVIN.test(input.value)) {
+                // vin for test: Z6FAXXESMAJT02521, WAUBH54B11N111054, WDF44781313229645
+                location.href =
+                    'https://emex.ru/catalogs/original2?utm_source=kazan.emex.ru/modifications?vin=' +
+                    input.value;
+            } else {
+                location.href = '/result.html?search=' + input.value;
+            }
+        });
+    }
+
+    // window.resize = function() {
+    //   sticky = document.querySelector('header').offsetTop;
+    // };
+
+    popup();
+    inirForms();
+    inputValidationInit();
+
+    createVideo(videoId);
 };
