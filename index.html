@@ -1,1253 +1,1723 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>
-      Автозапчасти, запчасти, каталог запчастей для иномарок, интернет – магазин
-      Emex
-    </title>
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="./src/favicon/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./src/favicon/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="./src/favicon/favicon-16x16.png"
-    />
-    <link
-      rel="mask-icon"
-      href="./src/favicon/safari-pinned-tab.svg"
-      color="#5bbad5"
-    />
-    <link
-      rel="shortcut icon"
-      href="./src/favicon/favicon.ico"
-      type="image/x-icon"
-    />
-    <!-- Google Tag Manager -->
-    <script>
-      (function (w, d, s, l, i) {
-        w[l] = w[l] || [];
-        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
-        var f = d.getElementsByTagName(s)[0],
-          j = d.createElement(s),
-          dl = l != "dataLayer" ? "&l=" + l : "";
-        j.async = true;
-        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
-        f.parentNode.insertBefore(j, f);
-      })(window, document, "script", "dataLayer", "GTM-TPZVC65");
-    </script>
-    <!-- End Google Tag Manager -->
-  </head>
-  <body>
-    <!-- Google Tag Manager (noscript) -->
-    <noscript>
-      <iframe
-        src="https://www.googletagmanager.com/ns.html?id=GTM-TPZVC65"
-        height="0"
-        width="0"
-        style="display: none; visibility: hidden"
-      ></iframe>
-    </noscript>
-    <!-- end -->
-    <div class="header-wrapper">
-      <div class="top-line is-desktop">
-        <div class="content-wrapper">
-          <div class="wrapper">
-            <span>Казань</span>
-            <a
-              href="https://emex.ru/?utm_source=kazan.emex.ru&utm_id=main&utm_term=login"
-              class="e-link"
-              >Вход</a
-            >
-          </div>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>
+            Автозапчасти, запчасти, каталог запчастей для иномарок, интернет –
+            магазин Emex
+        </title>
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="./src/favicon/apple-touch-icon.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./src/favicon/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="./src/favicon/favicon-16x16.png"
+        />
+        <link
+            rel="mask-icon"
+            href="./src/favicon/safari-pinned-tab.svg"
+            color="#5bbad5"
+        />
+        <link
+            rel="shortcut icon"
+            href="./src/favicon/favicon.ico"
+            type="image/x-icon"
+        />
+        <!-- Google Tag Manager -->
+        <script>
+            (function (w, d, s, l, i) {
+                w[l] = w[l] || [];
+                w[l].push({
+                    'gtm.start': new Date().getTime(),
+                    event: 'gtm.js',
+                });
+                var f = d.getElementsByTagName(s)[0],
+                    j = d.createElement(s),
+                    dl = l != 'dataLayer' ? '&l=' + l : '';
+                j.async = true;
+                j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+                f.parentNode.insertBefore(j, f);
+            })(window, document, 'script', 'dataLayer', 'GTM-TPZVC65');
+        </script>
+        <!-- End Google Tag Manager -->
+    </head>
+    <body>
+        <!-- Google Tag Manager (noscript) -->
+        <noscript>
+            <iframe
+                src="https://www.googletagmanager.com/ns.html?id=GTM-TPZVC65"
+                height="0"
+                width="0"
+                style="display: none; visibility: hidden"
+            ></iframe>
+        </noscript>
+        <!-- end -->
+        <div class="header-wrapper">
+            <div class="top-line is-desktop">
+                <div class="content-wrapper">
+                    <div class="wrapper">
+                        <span>Казань</span>
+                        <a
+                            href="https://emex.ru/?utm_source=kazan.emex.ru&utm_id=main&utm_term=login"
+                            class="e-link"
+                            >Вход</a
+                        >
+                    </div>
+                </div>
+            </div>
+            <header class="">
+                <div class="content-wrapper">
+                    <div class="wrapper">
+                        <a class="logo-link" href="#">
+                            <svg
+                                class="logo is-desktop"
+                                width="138"
+                                height="26"
+                            >
+                                <use xlink:href="#logo"></use>
+                            </svg>
+                            <svg
+                                class="small-logo is-mobile"
+                                width="48"
+                                height="36"
+                            >
+                                <use xlink:href="#logoSmall"></use>
+                            </svg>
+                        </a>
+
+                        <div class="header-center">
+                            <div class="search">
+                                <form action="" class="search-form">
+                                    <input
+                                        type="text"
+                                        placeholder="Номер детали, VIN. Пример — 1744977"
+                                    />
+                                    <button class="is-desktop search-submit">
+                                        Найти
+                                    </button>
+                                    <button class="is-mobile search-submit">
+                                        <svg width="24" height="24">
+                                            <use xlink:href="#search"></use>
+                                        </svg>
+                                    </button>
+                                </form>
+                            </div>
+
+                            <div class="phone">
+                                <a class="phone-number" href="tel:+78435283155"
+                                    >+7 (843) 528-31-55</a
+                                >
+                                <span class="is-desktop"
+                                    >Бесплатный подбор за 10 минут</span
+                                >
+                                <span class="is-mobile"
+                                    >Подбор за 10 минут</span
+                                >
+                            </div>
+                        </div>
+
+                        <a
+                            class="e-link basket"
+                            href="https://emex.ru/basket?utm_source=kazan.emex.ru&utm_id=main&utm_term=cart"
+                            target="_blank"
+                        >
+                            <svg width="21" height="19">
+                                <use xlink:href="#basket"></use>
+                            </svg>
+                            <span class="is-desktop">Корзина</span>
+                        </a>
+                    </div>
+                </div>
+            </header>
         </div>
-      </div>
-      <header class="">
-        <div class="content-wrapper">
-          <div class="wrapper">
-            <a class="logo-link" href="#">
-              <svg class="logo is-desktop" width="138" height="26">
-                <use xlink:href="#logo"></use>
-              </svg>
-              <svg class="small-logo is-mobile" width="48" height="36">
-                <use xlink:href="#logoSmall"></use>
-              </svg>
-            </a>
-
-            <div class="header-center">
-              <div class="search">
-                <form action="" class="search-form">
-                  <input
-                    type="text"
-                    placeholder="Номер детали, VIN. Пример — 1744977"
-                  />
-                  <button class="is-desktop search-submit">Найти</button>
-                  <button class="is-mobile search-submit">
-                    <svg width="24" height="24">
-                      <use xlink:href="#search"></use>
-                    </svg>
-                  </button>
-                </form>
-              </div>
-
-              <div class="phone">
-                <a class="phone-number" href="tel:+78435283155"
-                  >+7 (843) 528-31-55</a
-                >
-                <span class="is-desktop">Бесплатный подбор за 10 минут</span>
-                <span class="is-mobile">Подбор за 10 минут</span>
-              </div>
-            </div>
-
-            <a
-              class="e-link basket"
-              href="https://emex.ru/basket?utm_source=kazan.emex.ru&utm_id=main&utm_term=cart"
-              target="_blank"
-            >
-              <svg width="21" height="19">
-                <use xlink:href="#basket"></use>
-              </svg>
-              <span class="is-desktop">Корзина</span>
-            </a>
-          </div>
-        </div>
-      </header>
-    </div>
-    <section class="main-wrapper">
-      <div id="expert" class="top-block">
-        <div class="content-wrapper">
-          <h1 class="header-title">
-            Подбор запчастей<br />экспертом в<br />
-            Казани
-          </h1>
-          <div class="list">
-            <div class="list-item">
-              <svg class="list-icon" width="40" height="26">
-                <use xlink:href="#icon"></use>
-              </svg>
-              <span class="list-title"> Быстро </span>
-              <span class="list-description">
-                Подбор за 10 минут<br />Доставка от 30 минут
-              </span>
-            </div>
-            <div class="list-item">
-              <svg class="list-icon" width="26" height="26">
-                <use xlink:href="#icon1"></use>
-              </svg>
-              <span class="list-title"> Качественно </span>
-              <span class="list-description">
-                Гарантия до года, <br />бесплатный возврат
-              </span>
-            </div>
-            <div class="list-item">
-              <svg class="list-icon" width="30" height="26">
-                <use xlink:href="#icon2"></use>
-              </svg>
-              <span class="list-title"> Надежно </span>
-              <span class="list-description">
-                Работаем с 1998 <br />
-                года в России
-              </span>
-            </div>
-          </div>
-          <div class="call">
-            <form class="form-bitrix24 callback-form call__form" method="post">
-              <input
-                type="text"
-                name="phone"
-                placeholder="+7 000 000 00 00"
-                required
-              />
-              <button type="submit">Перезвонить</button>
-            </form>
-            <div class="call__success">
-              <svg width="21" height="19">
-                <use xlink:href="#successWhite"></use>
-              </svg>
-              <span>Сообщение успешно отправлено</span>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="main-content">
-        <div class="content-wrapper">
-          <div id="catalog" class="select-all">
-            <h2 class="h2">Подберем всё</h2>
-            <div class="select-all__inner">
-              <div class="catalog">
-                <a href="#" class="catalog__item catalog__link">
-                  <span class="citem__title">Шины, диски</span>
-                  <img class="citem__img" src="./src/assets/item1.png" alt="" />
-                </a>
-                <a href="#" class="catalog__item catalog__link">
-                  <span class="citem__title">Масла</span>
-                  <img class="citem__img" src="./src/assets/item2.png" alt="" />
-                </a>
-                <a href="#" class="catalog__item catalog__link">
-                  <span class="citem__title">Фильтры</span>
-                  <img class="citem__img" src="./src/assets/item3.png" alt="" />
-                </a>
-                <a href="#" class="catalog__item catalog__link">
-                  <span class="citem__title">Тормозная система</span>
-                  <img class="citem__img" src="./src/assets/item4.png" alt="" />
-                </a>
-                <a href="#" class="catalog__item catalog__link">
-                  <span class="citem__title">Ходовая группа</span>
-                  <img class="citem__img" src="./src/assets/item5.png" alt="" />
-                </a>
-                <a href="#" class="catalog__item catalog__link">
-                  <span class="citem__title">Детали двигателя</span>
-                  <img class="citem__img" src="./src/assets/item6.png" alt="" />
-                </a>
-                <a href="#" class="catalog__item catalog__link">
-                  <span class="citem__title">Электрика и Свет</span>
-                  <img class="citem__img" src="./src/assets/item7.png" alt="" />
-                </a>
-                <a
-                  href="https://emex.ru/maintenance2?utm_source=kazan.emex.ru"
-                  class="catalog__item"
-                  target="_blank"
-                >
-                  <span class="citem__title citem__title-small"
-                    >Запчасти для <br />технического <br />обслуживания</span
-                  >
-                  <svg width="21" height="19">
-                    <use xlink:href="#arrow"></use>
-                  </svg>
-                </a>
-                <a
-                  href="https://emex.ru/catalogs/original2?utm_source=kazan.emex.ru"
-                  class="catalog__item"
-                  target="_blank"
-                >
-                  <span class="citem__title citem__title-small"
-                    >Каталог <br />оригинальных <br />запчастей</span
-                  >
-                  <svg width="21" height="19">
-                    <use xlink:href="#arrow"></use>
-                  </svg>
-                </a>
-              </div>
-              <div id="to" class="ad">
-                <div class="ad-item">
-                  <div class="ad-item__inner">
-                    <span class="ad-item__title">Запчасти<br />в наличии </span>
-                    <span class="ad-item__count">10</span>
-                    <span class="ad-item__title">миллионов</span>
-                  </div>
-                </div>
-                <div class="ad-item">
-                  <div class="ad-item__inner">
-                    <span class="ad-item__title">Доставка <br />до двери</span>
-                    <span class="ad-item__count">30</span>
-                    <span class="ad-item__title">минут</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div id="brand" class="car-brand">
-            <h2 class="h2">Любые марки автомобилей и мототехники</h2>
-            <div class="tabs car-brand__tabs">
-              <nav class="tabs__links">
-                <ul>
-                  <li class="tabs__link">
-                    <a class="is-active" data-tab-name="tab1" href="#">
-                      <span class="is-desktop">Техническое обслуживание</span>
-                      <span class="is-mobile">ТО</span>
-                    </a>
-                  </li>
-                  <li class="tabs__link">
-                    <a data-tab-name="tab2" href="#">Легковые</a>
-                  </li>
-                  <li class="tabs__link">
-                    <a data-tab-name="tab3" href="#">Коммерческие</a>
-                  </li>
-                  <li class="tabs__link">
-                    <a data-tab-name="tab4" href="#">Мото</a>
-                  </li>
-                </ul>
-                <div class="tabs__pointer"></div>
-              </nav>
-              <div class="tabs__content">
-                <div class="tabs__item tab1 is-active">
-                  <ul class="car-brand__list">
-                    <li class="car-brand__item">
-                      <a class="car-brand__link" href="#">Audi</a>
-                    </li>
-                    <li class="car-brand__item">
-                      <a class="car-brand__link" href="#">BMW</a>
-                    </li>
-                    <li class="car-brand__item">
-                      <a class="car-brand__link" href="#">Cadillac</a>
-                    </li>
-                    <li class="car-brand__item">
-                      <a class="car-brand__link" href="#">Chevrolet</a>
-                    </li>
-                    <li class="car-brand__item">
-                      <a class="car-brand__link" href="#">Citroen</a>
-                    </li>
-                    <li class="car-brand__item">
-                      <a class="car-brand__link" href="#">Daewoo</a>
-                    </li>
-                    <li class="car-brand__item">
-                      <a class="car-brand__link" href="#">Fiat</a>
-                    </li>
-                    <li class="car-brand__item">
-                      <a class="car-brand__link" href="#">Ford</a>
-                    </li>
-                    <li class="car-brand__item">
-                      <a class="car-brand__link" href="#">Ford usa</a>
-                    </li>
-                    <li class="car-brand__item">
-                      <a class="car-brand__link" href="#">Honda</a>
-                    </li>
-                    <li class="car-brand__item">
-                      <a class="car-brand__link" href="#">Hummer</a>
-                    </li>
-                    <li class="car-brand__item">
-                      <a class="car-brand__link" href="#">Hyundai</a>
-                    </li>
-                    <li class="car-brand__item">
-                      <a class="car-brand__link" href="#">Infiniti</a>
-                    </li>
-                    <li class="car-brand__item">
-                      <a class="car-brand__link" href="#">Jaguar</a>
-                    </li>
-                    <li class="car-brand__item">
-                      <a class="car-brand__link" href="#">Jeep</a>
-                    </li>
-                    <li class="car-brand__item">
-                      <a class="car-brand__link" href="#">Kia</a>
-                    </li>
-                    <li class="car-brand__item">
-                      <a class="car-brand__link" href="#">Land rover</a>
-                    </li>
-                    <li class="car-brand__item">
-                      <a class="car-brand__link" href="#">Lexus</a>
-                    </li>
-                    <li class="car-brand__item">
-                      <a class="car-brand__link" href="#">Mazda</a>
-                    </li>
-                    <li class="car-brand__item">
-                      <a class="car-brand__link" href="#">Mercedes</a>
-                    </li>
-                    <li class="car-brand__item">
-                      <a class="car-brand__link" href="#">Mitsubishi</a>
-                    </li>
-                    <li class="car-brand__item">
-                      <a class="car-brand__link" href="#">Nissan</a>
-                    </li>
-                    <li class="car-brand__item">
-                      <a class="car-brand__link" href="#">Opel</a>
-                    </li>
-                    <li class="car-brand__item">
-                      <a class="car-brand__link" href="#">Peugeot</a>
-                    </li>
-                    <li class="car-brand__item">
-                      <a class="car-brand__link" href="#">Renault</a>
-                    </li>
-                    <li class="car-brand__item">
-                      <a class="car-brand__link" href="#">Seat</a>
-                    </li>
-                    <li class="car-brand__item">
-                      <a class="car-brand__link" href="#">Skoda</a>
-                    </li>
-                    <li class="car-brand__item">
-                      <a class="car-brand__link" href="#">SsangYong</a>
-                    </li>
-                    <li class="car-brand__item">
-                      <a class="car-brand__link" href="#">Subaru</a>
-                    </li>
-                    <li class="car-brand__item">
-                      <a class="car-brand__link" href="#">Suzuki</a>
-                    </li>
-                    <li class="car-brand__item">
-                      <a class="car-brand__link" href="#">Toyota</a>
-                    </li>
-                    <li class="car-brand__item">
-                      <a class="car-brand__link" href="#">Volkswagen</a>
-                    </li>
-                    <li class="car-brand__item">
-                      <a class="car-brand__link" href="#">Volvo</a>
-                    </li>
-                    <li class="car-brand__item">
-                      <a class="car-brand__link" href="#">ЗАЗ</a>
-                    </li>
-                    <li class="car-brand__item">
-                      <a class="car-brand__link" href="#">ТагАЗ</a>
-                    </li>
-                    <li class="car-brand__item">&nbsp;</li>
-                    <li class="car-brand__item">&nbsp;</li>
-                  </ul>
-                  <a class="car-brand__all" href="#">
-                    <span>Все марки</span>
-                    <svg
-                      width="10"
-                      height="7"
-                      viewBox="0 0 10 7"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M10 0L10 2.62799L4.99445 7L-1.15254e-07 2.63669L-1.4265e-10 0.00326304L4.99445 4.38941L9.8535 0.104423"
-                        fill="#1D1D1B"
-                      />
-                    </svg>
-                  </a>
-                </div>
-                <div class="tabs__item tab2">
-                  <ul class="car-brand__list">
-                    <li class="car-brand__item">
-                      <a class="car-brand__link" href="#">Audi</a>
-                    </li>
-                    <li class="car-brand__item">
-                      <a class="car-brand__link" href="#">BMW</a>
-                    </li>
-                    <li class="car-brand__item">
-                      <a class="car-brand__link" href="#">Chevrolet</a>
-                    </li>
-                    <li class="car-brand__item">
-                      <a class="car-brand__link" href="#">Citroen</a>
-                    </li>
-                    <li class="car-brand__item">
-                      <a class="car-brand__link" href="#">Dacia</a>
-                    </li>
-                    <li class="car-brand__item">
-                      <a class="car-brand__link" href="#">Daewoo</a>
-                    </li>
-                    <li class="car-brand__item">
-                      <a class="car-brand__link" href="#">Fiat</a>
-                    </li>
-                    <li class="car-brand__item">
-                      <a class="car-brand__link" href="#">Geely</a>
-                    </li>
-                    <li class="car-brand__item">
-                      <a class="car-brand__link" href="#">Great Wall</a>
-                    </li>
-                    <li class="car-brand__item">
-                      <a class="car-brand__link" href="#">Honda</a>
-                    </li>
-                    <li class="car-brand__item">
-                      <a class="car-brand__link" href="#">Hyundai</a>
-                    </li>
-                    <li class="car-brand__item">
-                      <a class="car-brand__link" href="#">Infiniti</a>
-                    </li>
-                    <li class="car-brand__item">
-                      <a class="car-brand__link" href="#">Jeep</a>
-                    </li>
-                    <li class="car-brand__item">
-                      <a class="car-brand__link" href="#">Kia</a>
-                    </li>
-                    <li class="car-brand__item">
-                      <a class="car-brand__link" href="#">Lexus</a>
-                    </li>
-                    <li class="car-brand__item">
-                      <a class="car-brand__link" href="#">Lifan</a>
-                    </li>
-                    <li class="car-brand__item">
-                      <a class="car-brand__link" href="#">Mazda</a>
-                    </li>
-                    <li class="car-brand__item">
-                      <a class="car-brand__link" href="#">Mercedes-Benz</a>
-                    </li>
-                    <li class="car-brand__item">
-                      <a class="car-brand__link" href="#">Mitsubishi</a>
-                    </li>
-                    <li class="car-brand__item">
-                      <a class="car-brand__link" href="#">Nissan</a>
-                    </li>
-                    <li class="car-brand__item">
-                      <a class="car-brand__link" href="#">Opel</a>
-                    </li>
-                    <li class="car-brand__item">
-                      <a class="car-brand__link" href="#">Peugeot</a>
-                    </li>
-                    <li class="car-brand__item">
-                      <a class="car-brand__link" href="#">Renault</a>
-                    </li>
-                    <li class="car-brand__item">
-                      <a class="car-brand__link" href="#">Seat</a>
-                    </li>
-                    <li class="car-brand__item">
-                      <a class="car-brand__link" href="#">Skoda</a>
-                    </li>
-                    <li class="car-brand__item">
-                      <a class="car-brand__link" href="#">SsangYong</a>
-                    </li>
-                    <li class="car-brand__item">
-                      <a class="car-brand__link" href="#">Toyota</a>
-                    </li>
-                    <li class="car-brand__item">
-                      <a class="car-brand__link" href="#">Volkswagen</a>
-                    </li>
-                    <li class="car-brand__item">
-                      <a class="car-brand__link" href="#">Volvo</a>
-                    </li>
-                    <li class="car-brand__item">
-                      <a class="car-brand__link" href="#">ВАЗ</a>
-                    </li>
-                    <li class="car-brand__item">
-                      <a class="car-brand__link" href="#">УАЗ</a>
-                    </li>
-                  </ul>
-                  <a class="car-brand__all" href="#">
-                    <span>Все марки</span>
-                    <svg
-                      width="10"
-                      height="7"
-                      viewBox="0 0 10 7"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M10 0L10 2.62799L4.99445 7L-1.15254e-07 2.63669L-1.4265e-10 0.00326304L4.99445 4.38941L9.8535 0.104423"
-                        fill="#1D1D1B"
-                      />
-                    </svg>
-                  </a>
-                </div>
-                <div class="tabs__item tab3">
-                  <ul class="car-brand__list">
-                    <li class="car-brand__item">
-                      <a class="car-brand__link" href="#">BAW</a>
-                    </li>
-                    <li class="car-brand__item">
-                      <a class="car-brand__link" href="#">DAF</a>
-                    </li>
-                    <li class="car-brand__item">
-                      <a class="car-brand__link" href="#">DongFeng</a>
-                    </li>
-                    <li class="car-brand__item">
-                      <a class="car-brand__link" href="#">FAW</a>
-                    </li>
-                    <li class="car-brand__item">
-                      <a class="car-brand__link" href="#">Foton</a>
-                    </li>
-                    <li class="car-brand__item">
-                      <a class="car-brand__link" href="#">HOWO</a>
-                    </li>
-                    <li class="car-brand__item">
-                      <a class="car-brand__link" href="#">HOWO</a>
-                    </li>
-                    <li class="car-brand__item">
-                      <a class="car-brand__link" href="#">Hyundai</a>
-                    </li>
-                    <li class="car-brand__item">
-                      <a class="car-brand__link" href="#">IVECO</a>
-                    </li>
-                    <li class="car-brand__item">
-                      <a class="car-brand__link" href="#">JAC Motors</a>
-                    </li>
-                    <li class="car-brand__item">
-                      <a class="car-brand__link" href="#">MAN</a>
-                    </li>
-                    <li class="car-brand__item">
-                      <a class="car-brand__link" href="#">MERCEDES BENZ</a>
-                    </li>
-                    <li class="car-brand__item">
-                      <a class="car-brand__link" href="#">Renault-truck</a>
-                    </li>
-                    <li class="car-brand__item">
-                      <a class="car-brand__link" href="#">Scania</a>
-                    </li>
-                    <li class="car-brand__item">
-                      <a class="car-brand__link" href="#">Shaanxi</a>
-                    </li>
-                    <li class="car-brand__item">
-                      <a class="car-brand__link" href="#">Studebaker</a>
-                    </li>
-                    <li class="car-brand__item">
-                      <a class="car-brand__link" href="#">Tata</a>
-                    </li>
-                    <li class="car-brand__item">
-                      <a class="car-brand__link" href="#">Volvo</a>
-                    </li>
-                    <li class="car-brand__item">
-                      <a class="car-brand__link" href="#">Автокомпонент+</a>
-                    </li>
-                    <li class="car-brand__item">
-                      <a class="car-brand__link" href="#">БелАЗ</a>
-                    </li>
-                    <li class="car-brand__item">
-                      <a class="car-brand__link" href="#">Брянский Арсенал</a>
-                    </li>
-                    <li class="car-brand__item">
-                      <a class="car-brand__link" href="#">ГАЗ</a>
-                    </li>
-                    <li class="car-brand__item">
-                      <a class="car-brand__link" href="#">ЗИЛ</a>
-                    </li>
-                    <li class="car-brand__item">
-                      <a class="car-brand__link" href="#">КАЗ</a>
-                    </li>
-                    <li class="car-brand__item">
-                      <a class="car-brand__link" href="#">КамАЗ</a>
-                    </li>
-                    <li class="car-brand__item">
-                      <a class="car-brand__link" href="#">КрАЗ</a>
-                    </li>
-                    <li class="car-brand__item">
-                      <a class="car-brand__link" href="#">Мадара</a>
-                    </li>
-                    <li class="car-brand__item">
-                      <a class="car-brand__link" href="#">МАЗ</a>
-                    </li>
-                    <li class="car-brand__item">
-                      <a class="car-brand__link" href="#">МЗКТ</a>
-                    </li>
-                    <li class="car-brand__item">
-                      <a class="car-brand__link" href="#">МоАЗ</a>
-                    </li>
-                    <li class="car-brand__item">
-                      <a class="car-brand__link" href="#">НефАЗ</a>
-                    </li>
-                    <li class="car-brand__item">
-                      <a class="car-brand__link" href="#">СЗАП</a>
-                    </li>
-                    <li class="car-brand__item">
-                      <a class="car-brand__link" href="#">ТАТРА</a>
-                    </li>
-                    <li class="car-brand__item">
-                      <a class="car-brand__link" href="#">Тонар</a>
-                    </li>
-                    <li class="car-brand__item">
-                      <a class="car-brand__link" href="#">УралАЗ</a>
-                    </li>
-                    <li class="car-brand__item">
-                      <a class="car-brand__link" href="#">ЧМЗАП</a>
-                    </li>
-                  </ul>
-                </div>
-                <div class="tabs__item tab4">
-                  <div class="moto">
-                    <div class="moto__block">
-                      <div class="moto__title">Мотоциклы</div>
-                      <ul class="moto__list">
-                        <li class="moto__item">
-                          <a class="car-brand__link" href="#">BMW</a>
-                        </li>
-                        <li class="moto__item">
-                          <a class="car-brand__link" href="#">CAN-AM</a>
-                        </li>
-                        <li class="moto__item">
-                          <a class="car-brand__link" href="#">HONDA</a>
-                        </li>
-                        <li class="moto__item">
-                          <a class="car-brand__link" href="#">KAWASAKI</a>
-                        </li>
-                        <li class="moto__item">
-                          <a class="car-brand__link" href="#">SUZUKI</a>
-                        </li>
-                        <li class="moto__item">
-                          <a class="car-brand__link" href="#">VICTORY</a>
-                        </li>
-                      </ul>
+        <section class="main-wrapper">
+            <div id="expert" class="top-block">
+                <div class="content-wrapper">
+                    <h1 class="header-title">
+                        Подбор запчастей<br />экспертом в<br />
+                        Казани
+                    </h1>
+                    <div class="list">
+                        <div class="list-item">
+                            <svg class="list-icon" width="40" height="26">
+                                <use xlink:href="#icon"></use>
+                            </svg>
+                            <span class="list-title"> Быстро </span>
+                            <span class="list-description">
+                                Подбор за 10 минут<br />Доставка от 30 минут
+                            </span>
+                        </div>
+                        <div class="list-item">
+                            <svg class="list-icon" width="26" height="26">
+                                <use xlink:href="#icon1"></use>
+                            </svg>
+                            <span class="list-title"> Качественно </span>
+                            <span class="list-description">
+                                Гарантия до года, <br />бесплатный возврат
+                            </span>
+                        </div>
+                        <div class="list-item">
+                            <svg class="list-icon" width="30" height="26">
+                                <use xlink:href="#icon2"></use>
+                            </svg>
+                            <span class="list-title"> Надежно </span>
+                            <span class="list-description">
+                                Работаем с 1998 <br />
+                                года в России
+                            </span>
+                        </div>
                     </div>
-                    <div class="moto__block">
-                      <div class="moto__title">Квадроциклы</div>
-                      <ul class="moto__list">
-                        <li class="moto__item">
-                          <a class="car-brand__link" href="#">CAN-AM</a>
-                        </li>
-                        <li class="moto__item">
-                          <a class="car-brand__link" href="#">HONDA</a>
-                        </li>
-                        <li class="moto__item">
-                          <a class="car-brand__link" href="#">KAWASAKI</a>
-                        </li>
-                        <li class="moto__item">
-                          <a class="car-brand__link" href="#">SUZUKI</a>
-                        </li>
-                      </ul>
+                    <div class="call">
+                        <form
+                            class="form-bitrix24 callback-form call__form"
+                            method="post"
+                        >
+                            <input
+                                type="text"
+                                name="phone"
+                                placeholder="+7 000 000 00 00"
+                                required
+                            />
+                            <button type="submit">Перезвонить</button>
+                        </form>
+                        <div class="call__success">
+                            <svg width="21" height="19">
+                                <use xlink:href="#successWhite"></use>
+                            </svg>
+                            <span>Сообщение успешно отправлено</span>
+                        </div>
                     </div>
-                    <div class="moto__block">
-                      <div class="moto__title">Скутеры</div>
-                      <ul class="moto__list">
-                        <li class="moto__item">
-                          <a class="car-brand__link" href="#">HONDA</a>
-                        </li>
-                        <li class="moto__item">
-                          <a class="car-brand__link" href="#">SUZUKI</a>
-                        </li>
-                      </ul>
+                </div>
+            </div>
+            <div class="main-content">
+                <div class="content-wrapper">
+                    <div id="catalog" class="select-all">
+                        <h2 class="h2">Подберем всё</h2>
+                        <div class="select-all__inner">
+                            <div class="catalog">
+                                <a href="#" class="catalog__item catalog__link">
+                                    <span class="citem__title"
+                                        >Шины, диски</span
+                                    >
+                                    <img
+                                        class="citem__img"
+                                        src="./src/assets/item1.png"
+                                        alt=""
+                                    />
+                                </a>
+                                <a href="#" class="catalog__item catalog__link">
+                                    <span class="citem__title">Масла</span>
+                                    <img
+                                        class="citem__img"
+                                        src="./src/assets/item2.png"
+                                        alt=""
+                                    />
+                                </a>
+                                <a href="#" class="catalog__item catalog__link">
+                                    <span class="citem__title">Фильтры</span>
+                                    <img
+                                        class="citem__img"
+                                        src="./src/assets/item3.png"
+                                        alt=""
+                                    />
+                                </a>
+                                <a href="#" class="catalog__item catalog__link">
+                                    <span class="citem__title"
+                                        >Тормозная система</span
+                                    >
+                                    <img
+                                        class="citem__img"
+                                        src="./src/assets/item4.png"
+                                        alt=""
+                                    />
+                                </a>
+                                <a href="#" class="catalog__item catalog__link">
+                                    <span class="citem__title"
+                                        >Ходовая группа</span
+                                    >
+                                    <img
+                                        class="citem__img"
+                                        src="./src/assets/item5.png"
+                                        alt=""
+                                    />
+                                </a>
+                                <a href="#" class="catalog__item catalog__link">
+                                    <span class="citem__title"
+                                        >Детали двигателя</span
+                                    >
+                                    <img
+                                        class="citem__img"
+                                        src="./src/assets/item6.png"
+                                        alt=""
+                                    />
+                                </a>
+                                <a href="#" class="catalog__item catalog__link">
+                                    <span class="citem__title"
+                                        >Электрика и Свет</span
+                                    >
+                                    <img
+                                        class="citem__img"
+                                        src="./src/assets/item7.png"
+                                        alt=""
+                                    />
+                                </a>
+                                <a
+                                    href="https://emex.ru/maintenance2?utm_source=kazan.emex.ru"
+                                    class="catalog__item"
+                                    target="_blank"
+                                >
+                                    <span
+                                        class="citem__title citem__title-small"
+                                        >Запчасти для <br />технического
+                                        <br />обслуживания</span
+                                    >
+                                    <svg width="21" height="19">
+                                        <use xlink:href="#arrow"></use>
+                                    </svg>
+                                </a>
+                                <a
+                                    href="https://emex.ru/catalogs/original2?utm_source=kazan.emex.ru"
+                                    class="catalog__item"
+                                    target="_blank"
+                                >
+                                    <span
+                                        class="citem__title citem__title-small"
+                                        >Каталог <br />оригинальных
+                                        <br />запчастей</span
+                                    >
+                                    <svg width="21" height="19">
+                                        <use xlink:href="#arrow"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                            <div id="to" class="ad">
+                                <div class="ad-item">
+                                    <div class="ad-item__inner">
+                                        <span class="ad-item__title"
+                                            >Запчасти<br />в наличии
+                                        </span>
+                                        <span class="ad-item__count">10</span>
+                                        <span class="ad-item__title"
+                                            >миллионов</span
+                                        >
+                                    </div>
+                                </div>
+                                <div class="ad-item">
+                                    <div class="ad-item__inner">
+                                        <span class="ad-item__title"
+                                            >Доставка <br />до двери</span
+                                        >
+                                        <span class="ad-item__count">30</span>
+                                        <span class="ad-item__title"
+                                            >минут</span
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
 
-          <div id="vin" class="spares">
-            <div class="spares__inner">
-              <div class="spares__description">
-                <h2 class="h2">
-                  Подбор запчастей за 10 минут по VIN или артикулу
-                </h2>
-                <p>
-                  Эксперт поможет купить качественные запчасти по лучшей цене.
-                  <br />
-                  Доставка от 30 минут.
-                </p>
-              </div>
-              <div class="spares__form">
-                <form class="form-bitrix24 form-podbor spares-form">
-                  <div class="spares-form__item">
-                    <label>ИМЯ</label>
-                    <input type="text" name="name" placeholder="Иван Иванов" />
-                  </div>
-                  <div class="spares-form__item">
-                    <label>Телефон</label>
-                    <input
-                      type="text"
-                      name="phone"
-                      placeholder="+7 000 000 00 00"
-                      required
-                    />
-                  </div>
-                  <div class="spares-form__item">
-                    <label>VIN или артикул</label>
-                    <input type="text" name="vin" />
-                  </div>
-                  <div class="spares-form__item">
-                    <button type="submit" class="button_yellow">
-                      Отправить
-                    </button>
-                  </div>
-                  <div class="spares-form__text">
-                    <p>
-                      Отправляя форму вы соглашаетесь на
-                      <a href="./docx/agreement-and-politics.docx"
-                        >обработку персональных даннных</a
-                      >
-                    </p>
-                  </div>
-                </form>
-                <div class="call__success">
-                  <svg width="21" height="19">
-                    <use xlink:href="#successYellow"></use>
-                  </svg>
-                  <span>Сообщение успешно отправлено</span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <section id="company" class="video">
-            <h2 class="h2">Нам доверяют</h2>
-            <div class="video__wrapper">
-              <div class="video__text">
-                <h3 class="video__subtitle">
-                  Доставку заказов по России выполняет компания HWC
-                </h3>
-                <p class="video__description">
-                  HWC 20 лет хранит, сортирует и доставляет автозапчасти и
-                  обработывает 200 000 заказов в сутки
-                </p>
-              </div>
-              <div class="video__media"></div>
-            </div>
-          </section>
-
-          <div class="benefits">
-            <div class="benefit__item">
-              <div class="benefit__title">
-                Бесплатные <br />
-                возвраты
-              </div>
-              <div class="benefit__description">
-                Если все же купленный товар не подойдет — без разговоров вернем
-                деньги. Для возврата сохраняйте упаковку со стикером.
-              </div>
-            </div>
-            <div class="benefit__item">
-              <div class="benefit__title">
-                Экспертная <br />
-                лаборатория
-              </div>
-              <div class="benefit__description">
-                Контролируем качество всех поставляемых товаров с помощью
-                экспертной лаборатории, находим и устраняем подделки.
-              </div>
-            </div>
-            <div class="benefit__item">
-              <svg
-                class="benefit__bg"
-                width="213"
-                height="360"
-                viewBox="0 0 213 360"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path d="M0 0L213 0L121.439 360H0V0Z" fill="black" />
-              </svg>
-              <div class="benefit__title">Контроль<br />и автоматизация</div>
-              <div class="benefit__description">
-                В сортировке и доставке используем автоматизированные системы,
-                это исключает человеческий фактор и сводит риск ошибок
-                практически к нулю.
-              </div>
-            </div>
-          </div>
-
-          <div class="statistic">
-            <div class="statistic-item">
-              <div class="si__img">
-                <img src="./src/assets/img1.png" alt="" />
-              </div>
-              <div class="si__info">
-                <span class="si__count">20</span>
-                <span class="si__text">лет работаем в Казани</span>
-              </div>
-            </div>
-            <div class="statistic-item">
-              <div class="si__img">
-                <img src="./src/assets/img2.png" alt="" />
-              </div>
-              <div class="si__info">
-                <span class="si__count">30</span>
-                <span class="si__text">минут бесплатная доставка</span>
-              </div>
-            </div>
-            <div class="statistic-item">
-              <div class="si__img">
-                <img src="./src/assets/img3.png" alt="" />
-              </div>
-              <div class="si__info">
-                <span class="si__count">1</span>
-                <span class="si__text"
-                  >год гарантия при устновке запчасти на нашем СТО</span
-                >
-              </div>
-            </div>
-            <div class="statistic-item">
-              <div class="si__img">
-                <img src="./src/assets/img4.png" alt="" />
-              </div>
-              <div class="si__info">
-                <span class="si__count">50</span>
-                <span class="si__text"
-                  >тысяч заказов в день по всей стране</span
-                >
-              </div>
-            </div>
-          </div>
-
-          <section id="contacts" class="map">
-            <h2 class="h2">56 пунктов выдачи в Казани</h2>
-            <div class="map__container" id="map"></div>
-          </section>
-
-          <div class="free-select">
-            <span class="free-select__text">
-              Бесплатный подбор за 10 минут
-            </span>
-            <a class="free-select__phone" href="tel:+78435283155"
-              >+7 (843) 528-31-55</a
-            >
-          </div>
-
-          <div id="delivery" class="our-work">
-            <div class="our-work__title">
-              <h2 class="h2">Как мы работаем</h2>
-            </div>
-            <div class="our-work__content">
-              <div class="tabs our-work__tabs">
-                <nav class="tabs__links">
-                  <ul>
-                    <li class="tabs__link">
-                      <a class="is-active" data-tab-name="tab1" href="#"
-                        >Подбор экспертом</a
-                      >
-                    </li>
-                    <li class="tabs__link">
-                      <a data-tab-name="tab2" href="#">Заказ на сайте</a>
-                    </li>
-                  </ul>
-                  <div class="tabs__pointer"></div>
-                </nav>
-                <div class="tabs__content">
-                  <div class="tabs__item tab1 is-active">
-                    <div class="our-work__list">
-                      <div class="our-work__item">
-                        <div class="our-work__img"></div>
-                        <div class="our-work__text">
-                          Эксперт подбирает по телефону или в WhatsApp
-                          качественные запчасти по лучшей цене и за вас
-                          оформляет заказ.
+                    <div id="brand" class="car-brand">
+                        <h2 class="h2">
+                            Любые марки автомобилей и мототехники
+                        </h2>
+                        <div class="tabs car-brand__tabs">
+                            <nav class="tabs__links">
+                                <ul>
+                                    <li class="tabs__link">
+                                        <a
+                                            class="is-active"
+                                            data-tab-name="tab1"
+                                            href="#"
+                                        >
+                                            <span class="is-desktop"
+                                                >Техническое обслуживание</span
+                                            >
+                                            <span class="is-mobile">ТО</span>
+                                        </a>
+                                    </li>
+                                    <li class="tabs__link">
+                                        <a data-tab-name="tab2" href="#"
+                                            >Легковые</a
+                                        >
+                                    </li>
+                                    <li class="tabs__link">
+                                        <a data-tab-name="tab3" href="#"
+                                            >Коммерческие</a
+                                        >
+                                    </li>
+                                    <li class="tabs__link">
+                                        <a data-tab-name="tab4" href="#"
+                                            >Мото</a
+                                        >
+                                    </li>
+                                </ul>
+                                <div class="tabs__pointer"></div>
+                            </nav>
+                            <div class="tabs__content">
+                                <div class="tabs__item tab1 is-active">
+                                    <ul class="car-brand__list">
+                                        <li class="car-brand__item">
+                                            <a class="car-brand__link" href="#"
+                                                >Audi</a
+                                            >
+                                        </li>
+                                        <li class="car-brand__item">
+                                            <a class="car-brand__link" href="#"
+                                                >BMW</a
+                                            >
+                                        </li>
+                                        <li class="car-brand__item">
+                                            <a class="car-brand__link" href="#"
+                                                >Cadillac</a
+                                            >
+                                        </li>
+                                        <li class="car-brand__item">
+                                            <a class="car-brand__link" href="#"
+                                                >Chevrolet</a
+                                            >
+                                        </li>
+                                        <li class="car-brand__item">
+                                            <a class="car-brand__link" href="#"
+                                                >Citroen</a
+                                            >
+                                        </li>
+                                        <li class="car-brand__item">
+                                            <a class="car-brand__link" href="#"
+                                                >Daewoo</a
+                                            >
+                                        </li>
+                                        <li class="car-brand__item">
+                                            <a class="car-brand__link" href="#"
+                                                >Fiat</a
+                                            >
+                                        </li>
+                                        <li class="car-brand__item">
+                                            <a class="car-brand__link" href="#"
+                                                >Ford</a
+                                            >
+                                        </li>
+                                        <li class="car-brand__item">
+                                            <a class="car-brand__link" href="#"
+                                                >Ford usa</a
+                                            >
+                                        </li>
+                                        <li class="car-brand__item">
+                                            <a class="car-brand__link" href="#"
+                                                >Honda</a
+                                            >
+                                        </li>
+                                        <li class="car-brand__item">
+                                            <a class="car-brand__link" href="#"
+                                                >Hummer</a
+                                            >
+                                        </li>
+                                        <li class="car-brand__item">
+                                            <a class="car-brand__link" href="#"
+                                                >Hyundai</a
+                                            >
+                                        </li>
+                                        <li class="car-brand__item">
+                                            <a class="car-brand__link" href="#"
+                                                >Infiniti</a
+                                            >
+                                        </li>
+                                        <li class="car-brand__item">
+                                            <a class="car-brand__link" href="#"
+                                                >Jaguar</a
+                                            >
+                                        </li>
+                                        <li class="car-brand__item">
+                                            <a class="car-brand__link" href="#"
+                                                >Jeep</a
+                                            >
+                                        </li>
+                                        <li class="car-brand__item">
+                                            <a class="car-brand__link" href="#"
+                                                >Kia</a
+                                            >
+                                        </li>
+                                        <li class="car-brand__item">
+                                            <a class="car-brand__link" href="#"
+                                                >Land rover</a
+                                            >
+                                        </li>
+                                        <li class="car-brand__item">
+                                            <a class="car-brand__link" href="#"
+                                                >Lexus</a
+                                            >
+                                        </li>
+                                        <li class="car-brand__item">
+                                            <a class="car-brand__link" href="#"
+                                                >Mazda</a
+                                            >
+                                        </li>
+                                        <li class="car-brand__item">
+                                            <a class="car-brand__link" href="#"
+                                                >Mercedes</a
+                                            >
+                                        </li>
+                                        <li class="car-brand__item">
+                                            <a class="car-brand__link" href="#"
+                                                >Mitsubishi</a
+                                            >
+                                        </li>
+                                        <li class="car-brand__item">
+                                            <a class="car-brand__link" href="#"
+                                                >Nissan</a
+                                            >
+                                        </li>
+                                        <li class="car-brand__item">
+                                            <a class="car-brand__link" href="#"
+                                                >Opel</a
+                                            >
+                                        </li>
+                                        <li class="car-brand__item">
+                                            <a class="car-brand__link" href="#"
+                                                >Peugeot</a
+                                            >
+                                        </li>
+                                        <li class="car-brand__item">
+                                            <a class="car-brand__link" href="#"
+                                                >Renault</a
+                                            >
+                                        </li>
+                                        <li class="car-brand__item">
+                                            <a class="car-brand__link" href="#"
+                                                >Seat</a
+                                            >
+                                        </li>
+                                        <li class="car-brand__item">
+                                            <a class="car-brand__link" href="#"
+                                                >Skoda</a
+                                            >
+                                        </li>
+                                        <li class="car-brand__item">
+                                            <a class="car-brand__link" href="#"
+                                                >SsangYong</a
+                                            >
+                                        </li>
+                                        <li class="car-brand__item">
+                                            <a class="car-brand__link" href="#"
+                                                >Subaru</a
+                                            >
+                                        </li>
+                                        <li class="car-brand__item">
+                                            <a class="car-brand__link" href="#"
+                                                >Suzuki</a
+                                            >
+                                        </li>
+                                        <li class="car-brand__item">
+                                            <a class="car-brand__link" href="#"
+                                                >Toyota</a
+                                            >
+                                        </li>
+                                        <li class="car-brand__item">
+                                            <a class="car-brand__link" href="#"
+                                                >Volkswagen</a
+                                            >
+                                        </li>
+                                        <li class="car-brand__item">
+                                            <a class="car-brand__link" href="#"
+                                                >Volvo</a
+                                            >
+                                        </li>
+                                        <li class="car-brand__item">
+                                            <a class="car-brand__link" href="#"
+                                                >ЗАЗ</a
+                                            >
+                                        </li>
+                                        <li class="car-brand__item">
+                                            <a class="car-brand__link" href="#"
+                                                >ТагАЗ</a
+                                            >
+                                        </li>
+                                        <li class="car-brand__item">&nbsp;</li>
+                                        <li class="car-brand__item">&nbsp;</li>
+                                    </ul>
+                                    <a class="car-brand__all" href="#">
+                                        <span>Все марки</span>
+                                        <svg
+                                            width="10"
+                                            height="7"
+                                            viewBox="0 0 10 7"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <path
+                                                d="M10 0L10 2.62799L4.99445 7L-1.15254e-07 2.63669L-1.4265e-10 0.00326304L4.99445 4.38941L9.8535 0.104423"
+                                                fill="#1D1D1B"
+                                            />
+                                        </svg>
+                                    </a>
+                                </div>
+                                <div class="tabs__item tab2">
+                                    <ul class="car-brand__list">
+                                        <li class="car-brand__item">
+                                            <a class="car-brand__link" href="#"
+                                                >Audi</a
+                                            >
+                                        </li>
+                                        <li class="car-brand__item">
+                                            <a class="car-brand__link" href="#"
+                                                >BMW</a
+                                            >
+                                        </li>
+                                        <li class="car-brand__item">
+                                            <a class="car-brand__link" href="#"
+                                                >Chevrolet</a
+                                            >
+                                        </li>
+                                        <li class="car-brand__item">
+                                            <a class="car-brand__link" href="#"
+                                                >Citroen</a
+                                            >
+                                        </li>
+                                        <li class="car-brand__item">
+                                            <a class="car-brand__link" href="#"
+                                                >Dacia</a
+                                            >
+                                        </li>
+                                        <li class="car-brand__item">
+                                            <a class="car-brand__link" href="#"
+                                                >Daewoo</a
+                                            >
+                                        </li>
+                                        <li class="car-brand__item">
+                                            <a class="car-brand__link" href="#"
+                                                >Fiat</a
+                                            >
+                                        </li>
+                                        <li class="car-brand__item">
+                                            <a class="car-brand__link" href="#"
+                                                >Geely</a
+                                            >
+                                        </li>
+                                        <li class="car-brand__item">
+                                            <a class="car-brand__link" href="#"
+                                                >Great Wall</a
+                                            >
+                                        </li>
+                                        <li class="car-brand__item">
+                                            <a class="car-brand__link" href="#"
+                                                >Honda</a
+                                            >
+                                        </li>
+                                        <li class="car-brand__item">
+                                            <a class="car-brand__link" href="#"
+                                                >Hyundai</a
+                                            >
+                                        </li>
+                                        <li class="car-brand__item">
+                                            <a class="car-brand__link" href="#"
+                                                >Infiniti</a
+                                            >
+                                        </li>
+                                        <li class="car-brand__item">
+                                            <a class="car-brand__link" href="#"
+                                                >Jeep</a
+                                            >
+                                        </li>
+                                        <li class="car-brand__item">
+                                            <a class="car-brand__link" href="#"
+                                                >Kia</a
+                                            >
+                                        </li>
+                                        <li class="car-brand__item">
+                                            <a class="car-brand__link" href="#"
+                                                >Lexus</a
+                                            >
+                                        </li>
+                                        <li class="car-brand__item">
+                                            <a class="car-brand__link" href="#"
+                                                >Lifan</a
+                                            >
+                                        </li>
+                                        <li class="car-brand__item">
+                                            <a class="car-brand__link" href="#"
+                                                >Mazda</a
+                                            >
+                                        </li>
+                                        <li class="car-brand__item">
+                                            <a class="car-brand__link" href="#"
+                                                >Mercedes-Benz</a
+                                            >
+                                        </li>
+                                        <li class="car-brand__item">
+                                            <a class="car-brand__link" href="#"
+                                                >Mitsubishi</a
+                                            >
+                                        </li>
+                                        <li class="car-brand__item">
+                                            <a class="car-brand__link" href="#"
+                                                >Nissan</a
+                                            >
+                                        </li>
+                                        <li class="car-brand__item">
+                                            <a class="car-brand__link" href="#"
+                                                >Opel</a
+                                            >
+                                        </li>
+                                        <li class="car-brand__item">
+                                            <a class="car-brand__link" href="#"
+                                                >Peugeot</a
+                                            >
+                                        </li>
+                                        <li class="car-brand__item">
+                                            <a class="car-brand__link" href="#"
+                                                >Renault</a
+                                            >
+                                        </li>
+                                        <li class="car-brand__item">
+                                            <a class="car-brand__link" href="#"
+                                                >Seat</a
+                                            >
+                                        </li>
+                                        <li class="car-brand__item">
+                                            <a class="car-brand__link" href="#"
+                                                >Skoda</a
+                                            >
+                                        </li>
+                                        <li class="car-brand__item">
+                                            <a class="car-brand__link" href="#"
+                                                >SsangYong</a
+                                            >
+                                        </li>
+                                        <li class="car-brand__item">
+                                            <a class="car-brand__link" href="#"
+                                                >Toyota</a
+                                            >
+                                        </li>
+                                        <li class="car-brand__item">
+                                            <a class="car-brand__link" href="#"
+                                                >Volkswagen</a
+                                            >
+                                        </li>
+                                        <li class="car-brand__item">
+                                            <a class="car-brand__link" href="#"
+                                                >Volvo</a
+                                            >
+                                        </li>
+                                        <li class="car-brand__item">
+                                            <a class="car-brand__link" href="#"
+                                                >ВАЗ</a
+                                            >
+                                        </li>
+                                        <li class="car-brand__item">
+                                            <a class="car-brand__link" href="#"
+                                                >УАЗ</a
+                                            >
+                                        </li>
+                                    </ul>
+                                    <a class="car-brand__all" href="#">
+                                        <span>Все марки</span>
+                                        <svg
+                                            width="10"
+                                            height="7"
+                                            viewBox="0 0 10 7"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <path
+                                                d="M10 0L10 2.62799L4.99445 7L-1.15254e-07 2.63669L-1.4265e-10 0.00326304L4.99445 4.38941L9.8535 0.104423"
+                                                fill="#1D1D1B"
+                                            />
+                                        </svg>
+                                    </a>
+                                </div>
+                                <div class="tabs__item tab3">
+                                    <ul class="car-brand__list">
+                                        <li class="car-brand__item">
+                                            <a class="car-brand__link" href="#"
+                                                >BAW</a
+                                            >
+                                        </li>
+                                        <li class="car-brand__item">
+                                            <a class="car-brand__link" href="#"
+                                                >DAF</a
+                                            >
+                                        </li>
+                                        <li class="car-brand__item">
+                                            <a class="car-brand__link" href="#"
+                                                >DongFeng</a
+                                            >
+                                        </li>
+                                        <li class="car-brand__item">
+                                            <a class="car-brand__link" href="#"
+                                                >FAW</a
+                                            >
+                                        </li>
+                                        <li class="car-brand__item">
+                                            <a class="car-brand__link" href="#"
+                                                >Foton</a
+                                            >
+                                        </li>
+                                        <li class="car-brand__item">
+                                            <a class="car-brand__link" href="#"
+                                                >HOWO</a
+                                            >
+                                        </li>
+                                        <li class="car-brand__item">
+                                            <a class="car-brand__link" href="#"
+                                                >HOWO</a
+                                            >
+                                        </li>
+                                        <li class="car-brand__item">
+                                            <a class="car-brand__link" href="#"
+                                                >Hyundai</a
+                                            >
+                                        </li>
+                                        <li class="car-brand__item">
+                                            <a class="car-brand__link" href="#"
+                                                >IVECO</a
+                                            >
+                                        </li>
+                                        <li class="car-brand__item">
+                                            <a class="car-brand__link" href="#"
+                                                >JAC Motors</a
+                                            >
+                                        </li>
+                                        <li class="car-brand__item">
+                                            <a class="car-brand__link" href="#"
+                                                >MAN</a
+                                            >
+                                        </li>
+                                        <li class="car-brand__item">
+                                            <a class="car-brand__link" href="#"
+                                                >MERCEDES BENZ</a
+                                            >
+                                        </li>
+                                        <li class="car-brand__item">
+                                            <a class="car-brand__link" href="#"
+                                                >Renault-truck</a
+                                            >
+                                        </li>
+                                        <li class="car-brand__item">
+                                            <a class="car-brand__link" href="#"
+                                                >Scania</a
+                                            >
+                                        </li>
+                                        <li class="car-brand__item">
+                                            <a class="car-brand__link" href="#"
+                                                >Shaanxi</a
+                                            >
+                                        </li>
+                                        <li class="car-brand__item">
+                                            <a class="car-brand__link" href="#"
+                                                >Studebaker</a
+                                            >
+                                        </li>
+                                        <li class="car-brand__item">
+                                            <a class="car-brand__link" href="#"
+                                                >Tata</a
+                                            >
+                                        </li>
+                                        <li class="car-brand__item">
+                                            <a class="car-brand__link" href="#"
+                                                >Volvo</a
+                                            >
+                                        </li>
+                                        <li class="car-brand__item">
+                                            <a class="car-brand__link" href="#"
+                                                >Автокомпонент+</a
+                                            >
+                                        </li>
+                                        <li class="car-brand__item">
+                                            <a class="car-brand__link" href="#"
+                                                >БелАЗ</a
+                                            >
+                                        </li>
+                                        <li class="car-brand__item">
+                                            <a class="car-brand__link" href="#"
+                                                >Брянский Арсенал</a
+                                            >
+                                        </li>
+                                        <li class="car-brand__item">
+                                            <a class="car-brand__link" href="#"
+                                                >ГАЗ</a
+                                            >
+                                        </li>
+                                        <li class="car-brand__item">
+                                            <a class="car-brand__link" href="#"
+                                                >ЗИЛ</a
+                                            >
+                                        </li>
+                                        <li class="car-brand__item">
+                                            <a class="car-brand__link" href="#"
+                                                >КАЗ</a
+                                            >
+                                        </li>
+                                        <li class="car-brand__item">
+                                            <a class="car-brand__link" href="#"
+                                                >КамАЗ</a
+                                            >
+                                        </li>
+                                        <li class="car-brand__item">
+                                            <a class="car-brand__link" href="#"
+                                                >КрАЗ</a
+                                            >
+                                        </li>
+                                        <li class="car-brand__item">
+                                            <a class="car-brand__link" href="#"
+                                                >Мадара</a
+                                            >
+                                        </li>
+                                        <li class="car-brand__item">
+                                            <a class="car-brand__link" href="#"
+                                                >МАЗ</a
+                                            >
+                                        </li>
+                                        <li class="car-brand__item">
+                                            <a class="car-brand__link" href="#"
+                                                >МЗКТ</a
+                                            >
+                                        </li>
+                                        <li class="car-brand__item">
+                                            <a class="car-brand__link" href="#"
+                                                >МоАЗ</a
+                                            >
+                                        </li>
+                                        <li class="car-brand__item">
+                                            <a class="car-brand__link" href="#"
+                                                >НефАЗ</a
+                                            >
+                                        </li>
+                                        <li class="car-brand__item">
+                                            <a class="car-brand__link" href="#"
+                                                >СЗАП</a
+                                            >
+                                        </li>
+                                        <li class="car-brand__item">
+                                            <a class="car-brand__link" href="#"
+                                                >ТАТРА</a
+                                            >
+                                        </li>
+                                        <li class="car-brand__item">
+                                            <a class="car-brand__link" href="#"
+                                                >Тонар</a
+                                            >
+                                        </li>
+                                        <li class="car-brand__item">
+                                            <a class="car-brand__link" href="#"
+                                                >УралАЗ</a
+                                            >
+                                        </li>
+                                        <li class="car-brand__item">
+                                            <a class="car-brand__link" href="#"
+                                                >ЧМЗАП</a
+                                            >
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="tabs__item tab4">
+                                    <div class="moto">
+                                        <div class="moto__block">
+                                            <div class="moto__title">
+                                                Мотоциклы
+                                            </div>
+                                            <ul class="moto__list">
+                                                <li class="moto__item">
+                                                    <a
+                                                        class="car-brand__link"
+                                                        href="#"
+                                                        >BMW</a
+                                                    >
+                                                </li>
+                                                <li class="moto__item">
+                                                    <a
+                                                        class="car-brand__link"
+                                                        href="#"
+                                                        >CAN-AM</a
+                                                    >
+                                                </li>
+                                                <li class="moto__item">
+                                                    <a
+                                                        class="car-brand__link"
+                                                        href="#"
+                                                        >HONDA</a
+                                                    >
+                                                </li>
+                                                <li class="moto__item">
+                                                    <a
+                                                        class="car-brand__link"
+                                                        href="#"
+                                                        >KAWASAKI</a
+                                                    >
+                                                </li>
+                                                <li class="moto__item">
+                                                    <a
+                                                        class="car-brand__link"
+                                                        href="#"
+                                                        >SUZUKI</a
+                                                    >
+                                                </li>
+                                                <li class="moto__item">
+                                                    <a
+                                                        class="car-brand__link"
+                                                        href="#"
+                                                        >VICTORY</a
+                                                    >
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="moto__block">
+                                            <div class="moto__title">
+                                                Квадроциклы
+                                            </div>
+                                            <ul class="moto__list">
+                                                <li class="moto__item">
+                                                    <a
+                                                        class="car-brand__link"
+                                                        href="#"
+                                                        >CAN-AM</a
+                                                    >
+                                                </li>
+                                                <li class="moto__item">
+                                                    <a
+                                                        class="car-brand__link"
+                                                        href="#"
+                                                        >HONDA</a
+                                                    >
+                                                </li>
+                                                <li class="moto__item">
+                                                    <a
+                                                        class="car-brand__link"
+                                                        href="#"
+                                                        >KAWASAKI</a
+                                                    >
+                                                </li>
+                                                <li class="moto__item">
+                                                    <a
+                                                        class="car-brand__link"
+                                                        href="#"
+                                                        >SUZUKI</a
+                                                    >
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="moto__block">
+                                            <div class="moto__title">
+                                                Скутеры
+                                            </div>
+                                            <ul class="moto__list">
+                                                <li class="moto__item">
+                                                    <a
+                                                        class="car-brand__link"
+                                                        href="#"
+                                                        >HONDA</a
+                                                    >
+                                                </li>
+                                                <li class="moto__item">
+                                                    <a
+                                                        class="car-brand__link"
+                                                        href="#"
+                                                        >SUZUKI</a
+                                                    >
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                      </div>
-                      <div class="our-work__item">
-                        <div class="our-work__img"></div>
-                        <div class="our-work__text">
-                          Мы собираем заказ с нашего склада с доставкой до вас
-                          за 30 минут или заказываем из Москвы с доставкой от 1
-                          дня
-                        </div>
-                      </div>
-                      <div class="our-work__item">
-                        <div class="our-work__img"></div>
-                        <div class="our-work__text">
-                          Здесь мы сортируем заказы, проверяем качество товаров,
-                          если нужно — доупаковываем хрупкие изделия. Работаем
-                          круглосуточно, чтобы вы получили свой заказ вовремя.
-                        </div>
-                      </div>
-                      <div class="our-work__item">
-                        <div class="our-work__img"></div>
-                        <div class="our-work__text">
-                          Готовый заказ отправляем в пункт выдачи, который вы
-                          указали для доставки.
-                        </div>
-                      </div>
-                      <div class="our-work__item">
-                        <div class="our-work__img"></div>
-                        <div class="our-work__text">
-                          Как только товар будет на месте, пришлем уведомление.
-                        </div>
-                      </div>
                     </div>
-                  </div>
-                  <div class="tabs__item tab2">
-                    <div class="our-work__list">
-                      <div class="our-work__item our-work__item-info">
-                        <div class="our-work__info">
-                          <ul>
-                            <li>
-                              <span class="owi__date">14 фев</span>
-                              <span class="owi__text">Заказан</span>
-                            </li>
-                            <li>
-                              <span class="owi__date">14 фев</span>
-                              <span class="owi__text">У поставщика</span>
-                            </li>
-                            <li>
-                              <span class="owi__date">14 фев</span>
-                              <span class="owi__text">В пути</span>
-                            </li>
-                            <li>
-                              <span class="owi__date">14 фев</span>
-                              <span class="owi__text">На сортировке</span>
-                            </li>
-                            <li>
-                              <span class="owi__date">14 фев</span>
-                              <span class="owi__text">У перевозчика</span>
-                            </li>
-                            <li>
-                              <span class="owi__date">15 фев</span>
-                              <span class="owi__text bold">Готов к выдаче</span>
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="our-work__img"></div>
-                        <div class="our-work__text">
-                          Вы делаете заказ на сайте. В личном кабинете можно
-                          отслеживать статус его выполнения.
-                        </div>
-                      </div>
-                      <div class="our-work__item">
-                        <div class="our-work__img"></div>
-                        <div class="our-work__text">
-                          Поставщик собирает ваш заказ и отправляет в
-                          сортировочный центр Эмекса.
-                        </div>
-                      </div>
-                      <div class="our-work__item">
-                        <div class="our-work__img"></div>
-                        <div class="our-work__text">
-                          Здесь мы сортируем заказы, проверяем качество товаров,
-                          если нужно — доупаковываем хрупкие изделия. Работаем
-                          круглосуточно, чтобы вы получили свой заказ вовремя.
-                        </div>
-                      </div>
-                      <div class="our-work__item">
-                        <div class="our-work__img"></div>
-                        <div class="our-work__text">
-                          Готовый заказ отправляем в пункт выдачи, который вы
-                          указали для доставки.
-                        </div>
-                      </div>
-                      <div class="our-work__item">
-                        <div class="our-work__img"></div>
-                        <div class="our-work__text">
-                          Как только товар будет на месте, пришлем уведомление.
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
 
-          <div class="spares spares_dark">
-            <div class="spares__inner">
-              <div class="spares__description">
-                <h2 class="h2">
-                  Подбор запчастей за 10 минут по VIN или артикулу
-                </h2>
-                <p>
-                  Эксперт поможет купить качественные запчасти по лучшей цене.
-                  <br />
-                  Доставка от 30 минут.
-                </p>
-              </div>
-              <div class="spares__form">
-                <form class="form-bitrix24 form-podbor-2 spares-form">
-                  <div class="spares-form__item">
-                    <label>ИМЯ</label>
-                    <input type="text" name="name" placeholder="Иван Иванов" />
-                  </div>
-                  <div class="spares-form__item">
-                    <label>Телефон</label>
-                    <input
-                      type="text"
-                      name="phone"
-                      placeholder="+7 000 000 00 00"
-                      required
-                    />
-                  </div>
-                  <div class="spares-form__item">
-                    <label>VIN или артикул</label>
-                    <input type="text" name="vin" />
-                  </div>
-                  <div class="spares-form__item">
-                    <button type="submit" class="button_yellow">
-                      Отправить
-                    </button>
-                  </div>
-                  <div class="spares-form__text">
-                    <p>
-                      Отправляя форму вы соглашаетесь на
-                      <a href="./docx/agreement-and-politics.docx"
-                        >обработку персональных даннных</a
-                      >
-                    </p>
-                  </div>
-                </form>
-                <div class="call__success">
-                  <svg width="21" height="19">
-                    <use xlink:href="#successLight"></use>
-                  </svg>
-                  <span>Сообщение успешно отправлено</span>
+                    <div id="vin" class="spares">
+                        <div class="spares__inner">
+                            <div class="spares__description">
+                                <h2 class="h2">
+                                    Подбор запчастей за 10 минут по VIN или
+                                    артикулу
+                                </h2>
+                                <p>
+                                    Эксперт поможет купить качественные запчасти
+                                    по лучшей цене.
+                                    <br />
+                                    Доставка от 30 минут.
+                                </p>
+                            </div>
+                            <div class="spares__form">
+                                <form
+                                    class="form-bitrix24 form-podbor spares-form"
+                                >
+                                    <div class="spares-form__item">
+                                        <label>ИМЯ</label>
+                                        <input
+                                            type="text"
+                                            name="name"
+                                            placeholder="Иван Иванов"
+                                        />
+                                    </div>
+                                    <div class="spares-form__item">
+                                        <label>Телефон</label>
+                                        <input
+                                            type="text"
+                                            name="phone"
+                                            placeholder="+7 000 000 00 00"
+                                            required
+                                        />
+                                    </div>
+                                    <div class="spares-form__item">
+                                        <label>VIN или артикул</label>
+                                        <input type="text" name="vin" />
+                                    </div>
+                                    <div class="spares-form__item">
+                                        <button
+                                            type="submit"
+                                            class="button_yellow"
+                                        >
+                                            Отправить
+                                        </button>
+                                    </div>
+                                    <div class="spares-form__text">
+                                        <p>
+                                            Отправляя форму вы соглашаетесь на
+                                            <a
+                                                href="./docx/agreement-and-politics.docx"
+                                                >обработку персональных
+                                                даннных</a
+                                            >
+                                        </p>
+                                    </div>
+                                </form>
+                                <div class="call__success">
+                                    <svg width="21" height="19">
+                                        <use xlink:href="#successYellow"></use>
+                                    </svg>
+                                    <span>Сообщение успешно отправлено</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <section id="company" class="video">
+                        <h2 class="h2">Нам доверяют</h2>
+                        <div class="video__wrapper">
+                            <div class="video__text">
+                                <h3 class="video__subtitle">
+                                    Доставку заказов по России выполняет
+                                    компания HWC
+                                </h3>
+                                <p class="video__description">
+                                    HWC 20 лет хранит, сортирует и доставляет
+                                    автозапчасти и обработывает 200 000 заказов
+                                    в сутки
+                                </p>
+                            </div>
+                            <div class="video__media"></div>
+                        </div>
+                    </section>
+
+                    <div class="benefits">
+                        <div class="benefit__item">
+                            <div class="benefit__title">
+                                Бесплатные <br />
+                                возвраты
+                            </div>
+                            <div class="benefit__description">
+                                Если все же купленный товар не подойдет — без
+                                разговоров вернем деньги. Для возврата
+                                сохраняйте упаковку со стикером.
+                            </div>
+                        </div>
+                        <div class="benefit__item">
+                            <div class="benefit__title">
+                                Экспертная <br />
+                                лаборатория
+                            </div>
+                            <div class="benefit__description">
+                                Контролируем качество всех поставляемых товаров
+                                с помощью экспертной лаборатории, находим и
+                                устраняем подделки.
+                            </div>
+                        </div>
+                        <div class="benefit__item">
+                            <svg
+                                class="benefit__bg"
+                                width="213"
+                                height="360"
+                                viewBox="0 0 213 360"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    d="M0 0L213 0L121.439 360H0V0Z"
+                                    fill="black"
+                                />
+                            </svg>
+                            <div class="benefit__title">
+                                Контроль<br />и автоматизация
+                            </div>
+                            <div class="benefit__description">
+                                В сортировке и доставке используем
+                                автоматизированные системы, это исключает
+                                человеческий фактор и сводит риск ошибок
+                                практически к нулю.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="statistic">
+                        <div class="statistic-item">
+                            <div class="si__img">
+                                <img src="./src/assets/img1.png" alt="" />
+                            </div>
+                            <div class="si__info">
+                                <span class="si__count">20</span>
+                                <span class="si__text"
+                                    >лет работаем в Казани</span
+                                >
+                            </div>
+                        </div>
+                        <div class="statistic-item">
+                            <div class="si__img">
+                                <img src="./src/assets/img2.png" alt="" />
+                            </div>
+                            <div class="si__info">
+                                <span class="si__count">30</span>
+                                <span class="si__text"
+                                    >минут бесплатная доставка</span
+                                >
+                            </div>
+                        </div>
+                        <div class="statistic-item">
+                            <div class="si__img">
+                                <img src="./src/assets/img3.png" alt="" />
+                            </div>
+                            <div class="si__info">
+                                <span class="si__count">1</span>
+                                <span class="si__text"
+                                    >год гарантия при устновке запчасти на нашем
+                                    СТО</span
+                                >
+                            </div>
+                        </div>
+                        <div class="statistic-item">
+                            <div class="si__img">
+                                <img src="./src/assets/img4.png" alt="" />
+                            </div>
+                            <div class="si__info">
+                                <span class="si__count">50</span>
+                                <span class="si__text"
+                                    >тысяч заказов в день по всей стране</span
+                                >
+                            </div>
+                        </div>
+                    </div>
+
+                    <section id="contacts" class="map">
+                        <h2 class="h2">56 пунктов выдачи в Казани</h2>
+                        <div class="map__container" id="map"></div>
+                    </section>
+
+                    <div class="free-select">
+                        <span class="free-select__text">
+                            Бесплатный подбор за 10 минут
+                        </span>
+                        <a class="free-select__phone" href="tel:+78435283155"
+                            >+7 (843) 528-31-55</a
+                        >
+                    </div>
+
+                    <div id="delivery" class="our-work">
+                        <div class="our-work__title">
+                            <h2 class="h2">Как мы работаем</h2>
+                        </div>
+                        <div class="our-work__content">
+                            <div class="tabs our-work__tabs">
+                                <nav class="tabs__links">
+                                    <ul>
+                                        <li class="tabs__link">
+                                            <a
+                                                class="is-active"
+                                                data-tab-name="tab1"
+                                                href="#"
+                                                >Подбор экспертом</a
+                                            >
+                                        </li>
+                                        <li class="tabs__link">
+                                            <a data-tab-name="tab2" href="#"
+                                                >Заказ на сайте</a
+                                            >
+                                        </li>
+                                    </ul>
+                                    <div class="tabs__pointer"></div>
+                                </nav>
+                                <div class="tabs__content">
+                                    <div class="tabs__item tab1 is-active">
+                                        <div class="our-work__list">
+                                            <div class="our-work__item">
+                                                <div
+                                                    class="our-work__img"
+                                                ></div>
+                                                <div class="our-work__text">
+                                                    Эксперт подбирает по
+                                                    телефону или в WhatsApp
+                                                    качественные запчасти по
+                                                    лучшей цене и за вас
+                                                    оформляет заказ.
+                                                </div>
+                                            </div>
+                                            <div class="our-work__item">
+                                                <div
+                                                    class="our-work__img"
+                                                ></div>
+                                                <div class="our-work__text">
+                                                    Мы собираем заказ с нашего
+                                                    склада с доставкой до вас за
+                                                    30 минут или заказываем из
+                                                    Москвы с доставкой от 1 дня
+                                                </div>
+                                            </div>
+                                            <div class="our-work__item">
+                                                <div
+                                                    class="our-work__img"
+                                                ></div>
+                                                <div class="our-work__text">
+                                                    Здесь мы сортируем заказы,
+                                                    проверяем качество товаров,
+                                                    если нужно — доупаковываем
+                                                    хрупкие изделия. Работаем
+                                                    круглосуточно, чтобы вы
+                                                    получили свой заказ вовремя.
+                                                </div>
+                                            </div>
+                                            <div class="our-work__item">
+                                                <div
+                                                    class="our-work__img"
+                                                ></div>
+                                                <div class="our-work__text">
+                                                    Готовый заказ отправляем в
+                                                    пункт выдачи, который вы
+                                                    указали для доставки.
+                                                </div>
+                                            </div>
+                                            <div class="our-work__item">
+                                                <div
+                                                    class="our-work__img"
+                                                ></div>
+                                                <div class="our-work__text">
+                                                    Как только товар будет на
+                                                    месте, пришлем уведомление.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tabs__item tab2">
+                                        <div class="our-work__list">
+                                            <div
+                                                class="our-work__item our-work__item-info"
+                                            >
+                                                <div class="our-work__info">
+                                                    <ul>
+                                                        <li>
+                                                            <span
+                                                                class="owi__date"
+                                                                >14 фев</span
+                                                            >
+                                                            <span
+                                                                class="owi__text"
+                                                                >Заказан</span
+                                                            >
+                                                        </li>
+                                                        <li>
+                                                            <span
+                                                                class="owi__date"
+                                                                >14 фев</span
+                                                            >
+                                                            <span
+                                                                class="owi__text"
+                                                                >У
+                                                                поставщика</span
+                                                            >
+                                                        </li>
+                                                        <li>
+                                                            <span
+                                                                class="owi__date"
+                                                                >14 фев</span
+                                                            >
+                                                            <span
+                                                                class="owi__text"
+                                                                >В пути</span
+                                                            >
+                                                        </li>
+                                                        <li>
+                                                            <span
+                                                                class="owi__date"
+                                                                >14 фев</span
+                                                            >
+                                                            <span
+                                                                class="owi__text"
+                                                                >На
+                                                                сортировке</span
+                                                            >
+                                                        </li>
+                                                        <li>
+                                                            <span
+                                                                class="owi__date"
+                                                                >14 фев</span
+                                                            >
+                                                            <span
+                                                                class="owi__text"
+                                                                >У
+                                                                перевозчика</span
+                                                            >
+                                                        </li>
+                                                        <li>
+                                                            <span
+                                                                class="owi__date"
+                                                                >15 фев</span
+                                                            >
+                                                            <span
+                                                                class="owi__text bold"
+                                                                >Готов к
+                                                                выдаче</span
+                                                            >
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div
+                                                    class="our-work__img"
+                                                ></div>
+                                                <div class="our-work__text">
+                                                    Вы делаете заказ на сайте. В
+                                                    личном кабинете можно
+                                                    отслеживать статус его
+                                                    выполнения.
+                                                </div>
+                                            </div>
+                                            <div class="our-work__item">
+                                                <div
+                                                    class="our-work__img"
+                                                ></div>
+                                                <div class="our-work__text">
+                                                    Поставщик собирает ваш заказ
+                                                    и отправляет в сортировочный
+                                                    центр Эмекса.
+                                                </div>
+                                            </div>
+                                            <div class="our-work__item">
+                                                <div
+                                                    class="our-work__img"
+                                                ></div>
+                                                <div class="our-work__text">
+                                                    Здесь мы сортируем заказы,
+                                                    проверяем качество товаров,
+                                                    если нужно — доупаковываем
+                                                    хрупкие изделия. Работаем
+                                                    круглосуточно, чтобы вы
+                                                    получили свой заказ вовремя.
+                                                </div>
+                                            </div>
+                                            <div class="our-work__item">
+                                                <div
+                                                    class="our-work__img"
+                                                ></div>
+                                                <div class="our-work__text">
+                                                    Готовый заказ отправляем в
+                                                    пункт выдачи, который вы
+                                                    указали для доставки.
+                                                </div>
+                                            </div>
+                                            <div class="our-work__item">
+                                                <div
+                                                    class="our-work__img"
+                                                ></div>
+                                                <div class="our-work__text">
+                                                    Как только товар будет на
+                                                    месте, пришлем уведомление.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="spares spares_dark">
+                        <div class="spares__inner">
+                            <div class="spares__description">
+                                <h2 class="h2">
+                                    Подбор запчастей за 10 минут по VIN или
+                                    артикулу
+                                </h2>
+                                <p>
+                                    Эксперт поможет купить качественные запчасти
+                                    по лучшей цене.
+                                    <br />
+                                    Доставка от 30 минут.
+                                </p>
+                            </div>
+                            <div class="spares__form">
+                                <form
+                                    class="form-bitrix24 form-podbor-2 spares-form"
+                                >
+                                    <div class="spares-form__item">
+                                        <label>ИМЯ</label>
+                                        <input
+                                            type="text"
+                                            name="name"
+                                            placeholder="Иван Иванов"
+                                        />
+                                    </div>
+                                    <div class="spares-form__item">
+                                        <label>Телефон</label>
+                                        <input
+                                            type="text"
+                                            name="phone"
+                                            placeholder="+7 000 000 00 00"
+                                            required
+                                        />
+                                    </div>
+                                    <div class="spares-form__item">
+                                        <label>VIN или артикул</label>
+                                        <input type="text" name="vin" />
+                                    </div>
+                                    <div class="spares-form__item">
+                                        <button
+                                            type="submit"
+                                            class="button_yellow"
+                                        >
+                                            Отправить
+                                        </button>
+                                    </div>
+                                    <div class="spares-form__text">
+                                        <p>
+                                            Отправляя форму вы соглашаетесь на
+                                            <a
+                                                href="./docx/agreement-and-politics.docx"
+                                                >обработку персональных
+                                                даннных</a
+                                            >
+                                        </p>
+                                    </div>
+                                </form>
+                                <div class="call__success">
+                                    <svg width="21" height="19">
+                                        <use xlink:href="#successLight"></use>
+                                    </svg>
+                                    <span>Сообщение успешно отправлено</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <footer class="footer">
-      <div class="content-wrapper">
-        <div class="footer__inner">
-          <div class="footer__info">
-            <p>Бесплатный подбор за 10 минут</p>
-            <a class="footer__phone" href="tel:+78435283155"
-              >+7 (843) 528-31-55</a
-            >
-          </div>
-          <div class="footer__logos">
-            <div class="footer__logo">
-              <svg
+        </section>
+        <footer class="footer">
+            <div class="content-wrapper">
+                <div class="footer__inner">
+                    <div class="footer__info">
+                        <p>Бесплатный подбор за 10 минут</p>
+                        <a class="footer__phone" href="tel:+78435283155"
+                            >+7 (843) 528-31-55</a
+                        >
+                    </div>
+                    <div class="footer__logos">
+                        <div class="footer__logo">
+                            <svg
+                                width="40"
+                                height="40"
+                                viewBox="0 0 40 40"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                                class="sbcuctf"
+                            >
+                                <path
+                                    d="M10 13.224l2.996 5.195v3.169l-2.992 5.185L10 13.224z"
+                                    fill="#5B57A2"
+                                ></path>
+                                <path
+                                    d="M21.505 16.528l2.807-1.669 5.746-.005-8.553 5.083v-3.409z"
+                                    fill="#D90751"
+                                ></path>
+                                <path
+                                    d="M21.489 13.193l.015 6.878-3.003-1.79V8l2.988 5.193z"
+                                    fill="#FAB718"
+                                ></path>
+                                <path
+                                    d="M30.058 14.854l-5.746.005-2.823-1.666L18.5 8l11.557 6.854z"
+                                    fill="#ED6F26"
+                                ></path>
+                                <path
+                                    d="M21.505 26.802v-3.337L18.5 21.709 18.503 32l3.002-5.198z"
+                                    fill="#63B22F"
+                                ></path>
+                                <path
+                                    d="M24.305 25.148l-11.309-6.729L10 13.224l20.046 11.917-5.741.007z"
+                                    fill="#1487C9"
+                                ></path>
+                                <path
+                                    d="M18.503 32l3.001-5.199 2.801-1.654 5.74-.006L18.504 32z"
+                                    fill="#017F36"
+                                ></path>
+                                <path
+                                    d="M10.003 26.773l8.523-5.064-2.865-1.706-2.665 1.585-2.993 5.185z"
+                                    fill="#984995"
+                                ></path>
+                            </svg>
+                        </div>
+                        <div class="footer__logo">
+                            <svg
+                                width="75"
+                                height="40"
+                                viewBox="0 0 45 24"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                                class="sm1isdo"
+                            >
+                                <path
+                                    d="M18.962 17.473H16.09l1.796-11.164h2.872l-1.796 11.163zM29.372 6.58a7.046 7.046 0 00-2.576-.475c-2.836 0-4.833 1.52-4.845 3.694-.024 1.603 1.43 2.494 2.517 3.028 1.11.547 1.488.903 1.488 1.39-.01.748-.897 1.093-1.724 1.093-1.147 0-1.761-.178-2.695-.594l-.378-.178-.402 2.505c.674.309 1.915.583 3.203.595 3.013 0 4.975-1.497 4.998-3.813.012-1.27-.756-2.244-2.41-3.04-1.005-.51-1.62-.855-1.62-1.378.012-.475.52-.962 1.654-.962a4.858 4.858 0 012.14.428l.26.118.39-2.41zM33.189 13.518l1.146-3.124c-.012.024.236-.653.378-1.069l.2.962s.545 2.672.663 3.23h-2.387zm3.545-7.209h-2.222c-.685 0-1.205.202-1.5.926l-4.266 10.237h3.013l.603-1.674h3.687c.082.392.342 1.674.342 1.674h2.66L36.733 6.31zM10.879 13.921l2.812-7.612h3.037l-4.514 11.152H9.177l-2.56-9.7A11.673 11.673 0 003.6 6.535l.047-.226h4.62c.627.024 1.135.226 1.3.939l1.004 5.128v.002l.308 1.543z"
+                                    fill="#1B206C"
+                                ></path>
+                            </svg>
+                        </div>
+                        <div class="footer__logo">
+                            <svg
+                                width="61"
+                                height="40"
+                                viewBox="0 0 36 24"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                                class="s19lxhlg"
+                            >
+                                <path
+                                    d="M22.022 5.354h-7.897v12.898h7.897V5.354z"
+                                    fill="#FF5F00"
+                                ></path>
+                                <path
+                                    d="M14.938 11.803a8.19 8.19 0 013.133-6.448 8.203 8.203 0 100 12.899 8.188 8.188 0 01-3.133-6.45z"
+                                    fill="#EB001B"
+                                ></path>
+                                <path
+                                    d="M31.343 11.803a8.203 8.203 0 01-13.272 6.448 8.204 8.204 0 000-12.898A8.203 8.203 0 0131.343 11.8v.002z"
+                                    fill="#F79E1B"
+                                ></path>
+                            </svg>
+                        </div>
+                        <div class="footer__logo">
+                            <svg
+                                width="85"
+                                height="40"
+                                viewBox="0 0 51 24"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                                class="sm57388"
+                            >
+                                <path
+                                    fill-rule="evenodd"
+                                    clip-rule="evenodd"
+                                    d="M16.233 6.104v.005c-.005 0-1.57-.005-1.988 1.493-.383 1.374-1.461 5.168-1.49 5.272h-.299s-1.103-3.878-1.49-5.277C10.547 6.1 8.977 6.104 8.977 6.104H5.4v11.4h3.578v-6.77h.298l2.087 6.77h2.484l2.087-6.765h.299v6.765h3.577v-11.4h-3.577zM29.302 6.104s-1.049.095-1.54 1.195l-2.535 5.576h-.298v-6.77H21.35v11.4h3.38s1.097-.1 1.59-1.195l2.484-5.576h.298v6.77h3.578v-11.4H29.3zM34.27 11.282v6.223h3.578V13.87h3.876c1.69 0 3.12-1.08 3.652-2.589H34.27z"
+                                    fill="#4DB45E"
+                                ></path>
+                                <path
+                                    fill-rule="evenodd"
+                                    clip-rule="evenodd"
+                                    d="M41.724 6.104H33.77a5.722 5.722 0 005.62 4.68h6.131c.055-.259.08-.523.08-.797a3.878 3.878 0 00-3.876-3.883z"
+                                    fill="url(#mir_svg__paint0_linear)"
+                                ></path>
+                                <defs>
+                                    <linearGradient
+                                        id="mir_svg__paint0_linear"
+                                        x1="33.77"
+                                        y1="8.444"
+                                        x2="45.6"
+                                        y2="8.444"
+                                        gradientUnits="userSpaceOnUse"
+                                    >
+                                        <stop
+                                            offset="0.3"
+                                            stop-color="#00B4E6"
+                                        ></stop>
+                                        <stop
+                                            offset="1"
+                                            stop-color="#088CCB"
+                                        ></stop>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <a
+            class="whatsapp"
+            href="https://api.whatsapp.com/send?phone=79272491380"
+            target="_blank"
+            title="Задай вопрос в WhatsApp"
+        >
+            <img
                 width="40"
                 height="40"
-                viewBox="0 0 40 40"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-                class="sbcuctf"
-              >
-                <path
-                  d="M10 13.224l2.996 5.195v3.169l-2.992 5.185L10 13.224z"
-                  fill="#5B57A2"
-                ></path>
-                <path
-                  d="M21.505 16.528l2.807-1.669 5.746-.005-8.553 5.083v-3.409z"
-                  fill="#D90751"
-                ></path>
-                <path
-                  d="M21.489 13.193l.015 6.878-3.003-1.79V8l2.988 5.193z"
-                  fill="#FAB718"
-                ></path>
-                <path
-                  d="M30.058 14.854l-5.746.005-2.823-1.666L18.5 8l11.557 6.854z"
-                  fill="#ED6F26"
-                ></path>
-                <path
-                  d="M21.505 26.802v-3.337L18.5 21.709 18.503 32l3.002-5.198z"
-                  fill="#63B22F"
-                ></path>
-                <path
-                  d="M24.305 25.148l-11.309-6.729L10 13.224l20.046 11.917-5.741.007z"
-                  fill="#1487C9"
-                ></path>
-                <path
-                  d="M18.503 32l3.001-5.199 2.801-1.654 5.74-.006L18.504 32z"
-                  fill="#017F36"
-                ></path>
-                <path
-                  d="M10.003 26.773l8.523-5.064-2.865-1.706-2.665 1.585-2.993 5.185z"
-                  fill="#984995"
-                ></path>
-              </svg>
-            </div>
-            <div class="footer__logo">
-              <svg
-                width="75"
-                height="40"
-                viewBox="0 0 45 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-                class="sm1isdo"
-              >
-                <path
-                  d="M18.962 17.473H16.09l1.796-11.164h2.872l-1.796 11.163zM29.372 6.58a7.046 7.046 0 00-2.576-.475c-2.836 0-4.833 1.52-4.845 3.694-.024 1.603 1.43 2.494 2.517 3.028 1.11.547 1.488.903 1.488 1.39-.01.748-.897 1.093-1.724 1.093-1.147 0-1.761-.178-2.695-.594l-.378-.178-.402 2.505c.674.309 1.915.583 3.203.595 3.013 0 4.975-1.497 4.998-3.813.012-1.27-.756-2.244-2.41-3.04-1.005-.51-1.62-.855-1.62-1.378.012-.475.52-.962 1.654-.962a4.858 4.858 0 012.14.428l.26.118.39-2.41zM33.189 13.518l1.146-3.124c-.012.024.236-.653.378-1.069l.2.962s.545 2.672.663 3.23h-2.387zm3.545-7.209h-2.222c-.685 0-1.205.202-1.5.926l-4.266 10.237h3.013l.603-1.674h3.687c.082.392.342 1.674.342 1.674h2.66L36.733 6.31zM10.879 13.921l2.812-7.612h3.037l-4.514 11.152H9.177l-2.56-9.7A11.673 11.673 0 003.6 6.535l.047-.226h4.62c.627.024 1.135.226 1.3.939l1.004 5.128v.002l.308 1.543z"
-                  fill="#1B206C"
-                ></path>
-              </svg>
-            </div>
-            <div class="footer__logo">
-              <svg
-                width="61"
-                height="40"
-                viewBox="0 0 36 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-                class="s19lxhlg"
-              >
-                <path
-                  d="M22.022 5.354h-7.897v12.898h7.897V5.354z"
-                  fill="#FF5F00"
-                ></path>
-                <path
-                  d="M14.938 11.803a8.19 8.19 0 013.133-6.448 8.203 8.203 0 100 12.899 8.188 8.188 0 01-3.133-6.45z"
-                  fill="#EB001B"
-                ></path>
-                <path
-                  d="M31.343 11.803a8.203 8.203 0 01-13.272 6.448 8.204 8.204 0 000-12.898A8.203 8.203 0 0131.343 11.8v.002z"
-                  fill="#F79E1B"
-                ></path>
-              </svg>
-            </div>
-            <div class="footer__logo">
-              <svg
-                width="85"
-                height="40"
-                viewBox="0 0 51 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-                class="sm57388"
-              >
-                <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M16.233 6.104v.005c-.005 0-1.57-.005-1.988 1.493-.383 1.374-1.461 5.168-1.49 5.272h-.299s-1.103-3.878-1.49-5.277C10.547 6.1 8.977 6.104 8.977 6.104H5.4v11.4h3.578v-6.77h.298l2.087 6.77h2.484l2.087-6.765h.299v6.765h3.577v-11.4h-3.577zM29.302 6.104s-1.049.095-1.54 1.195l-2.535 5.576h-.298v-6.77H21.35v11.4h3.38s1.097-.1 1.59-1.195l2.484-5.576h.298v6.77h3.578v-11.4H29.3zM34.27 11.282v6.223h3.578V13.87h3.876c1.69 0 3.12-1.08 3.652-2.589H34.27z"
-                  fill="#4DB45E"
-                ></path>
-                <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M41.724 6.104H33.77a5.722 5.722 0 005.62 4.68h6.131c.055-.259.08-.523.08-.797a3.878 3.878 0 00-3.876-3.883z"
-                  fill="url(#mir_svg__paint0_linear)"
-                ></path>
-                <defs>
-                  <linearGradient
-                    id="mir_svg__paint0_linear"
-                    x1="33.77"
-                    y1="8.444"
-                    x2="45.6"
-                    y2="8.444"
-                    gradientUnits="userSpaceOnUse"
-                  >
-                    <stop offset="0.3" stop-color="#00B4E6"></stop>
-                    <stop offset="1" stop-color="#088CCB"></stop>
-                  </linearGradient>
-                </defs>
-              </svg>
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
-    <a
-      class="whatsapp"
-      href="https://api.whatsapp.com/send?phone=79272491380"
-      target="_blank"
-      title="Задай вопрос в WhatsApp"
-    >
-      <img
-        width="40"
-        height="40"
-        src="./src/assets/whatsapp.png"
-        alt="Иконка WhatsApp"
-      />
-      <p class="whatsapp__text">
-        Написать <br />
-        в WhatsApp
-      </p>
-    </a>
-    <div class="popup">
-      <div class="overflow"></div>
-      <div class="popup__inner">
-        <a class="popup__close" href="#">
-          <svg width="24" height="24">
-            <use xlink:href="#close"></use>
-          </svg>
+                src="./src/assets/whatsapp.png"
+                alt="Иконка WhatsApp"
+            />
+            <p class="whatsapp__text">
+                Написать <br />
+                в WhatsApp
+            </p>
         </a>
-        <h2 class="h2">Консультация эксперта</h2>
-        <div class="popup__content">
-          <p>
-            Поможем купить качественные запчасти по лучшей цене за 10 минут.
-            Доставка от 30 минут.
-          </p>
-          <div class="call">
-            <form
-              action=""
-              class="form-bitrix24 callback-form-popup call__form successed"
-            >
-              <input
-                class="input__grey"
-                type="text"
-                name="phone"
-                placeholder="+7 000 000 00 00"
-                required
-              />
-              <button type="submit" class="button_yellow">Перезвонить</button>
-            </form>
-            <div class="call__success">
-              <svg width="21" height="19">
-                <use xlink:href="#successYellow"></use>
-              </svg>
-              <span>Сообщение успешно отправлено</span>
+        <div class="popup">
+            <div class="overflow"></div>
+            <div class="popup__inner">
+                <a class="popup__close" href="#">
+                    <svg width="24" height="24">
+                        <use xlink:href="#close"></use>
+                    </svg>
+                </a>
+                <h2 class="h2">Консультация эксперта</h2>
+                <div class="popup__content">
+                    <p>
+                        Поможем купить качественные запчасти по лучшей цене за
+                        10 минут. Доставка от 30 минут.
+                    </p>
+                    <div class="call">
+                        <form
+                            action=""
+                            class="form-bitrix24 callback-form-popup call__form successed"
+                        >
+                            <input
+                                class="input__grey"
+                                type="text"
+                                name="phone"
+                                placeholder="+7 000 000 00 00"
+                                required
+                            />
+                            <button type="submit" class="button_yellow">
+                                Перезвонить
+                            </button>
+                        </form>
+                        <div class="call__success">
+                            <svg width="21" height="19">
+                                <use xlink:href="#successYellow"></use>
+                            </svg>
+                            <span>Сообщение успешно отправлено</span>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
-    </div>
-    <script
-      src="//cdn.callibri.ru/callibri.js"
-      type="text/javascript"
-      charset="«utf-8»"
-    ></script>
-    <link rel="stylesheet" href="https://cdn.envybox.io/widget/cbk.css" />
-    <script
-      type="text/javascript"
-      src="https://cdn.envybox.io/widget/cbk.js?wcb_code=964f06f9ddf043129229695e2092be3f"
-      charset="UTF-8"
-      async
-    ></script>
-  </body>
+
+        <link rel="stylesheet" href="https://cdn.envybox.io/widget/cbk.css" />
+        <script
+            type="text/javascript"
+            src="https://cdn.envybox.io/widget/cbk.js?wcb_code=964f06f9ddf043129229695e2092be3f"
+            charset="UTF-8"
+            async
+        ></script>
+    </body>
 </html>
